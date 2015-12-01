@@ -1,0 +1,135 @@
+#footer {
+	background-color: $corporate-1-bg-color;
+	padding: 20px 0;
+
+	&, a {
+		color: $corporate-3-color;
+	}
+
+	@include respond-to(tablet, desktop) {
+		padding: 40px 0 /*20px*/ 20px;
+	}
+
+	h2 {
+		font-family: open_sanssemibold;
+		font-size: 12px;
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+}
+
+#footer-modules {
+	@include respond-to(tablet, desktop) {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADAQMAAABoE/fBAAAAA3NCSVQICAjb4U/gAAAABlBMVEVep8sAAADwqPrJAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADEzLzExLzE1DzJ2eAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAALSURBVAiZY2AAAQAABgAB5of+fwAAAABJRU5ErkJggg==) top center repeat-y;
+		margin-bottom: 50px;
+		padding: 10px 0;
+	}
+}
+
+// Modules
+
+.mod-footer {
+	display: table;
+	margin-bottom: 30px;
+	width: 100%;
+
+	@include respond-to(desktop) {
+		margin-bottom: 45px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// Icons
+
+	.img {
+		background: #3D97C4 url(../images/ui/mod-footer-sprite.png) center 14px no-repeat;
+		border-radius: 50%;
+		display: table-cell;
+		height: 64px;
+		width: 64px;
+	}
+
+	.img-2 {
+		background-position: center -49px;
+	}
+
+	.img-3 {
+		background-position: center -111px;
+	}
+
+	.img-4 {
+		background-position: center -174x;
+	}
+
+	// Text
+
+	h3 {
+		font-family: open_sanssemibold;
+		font-size: 20px;
+		margin: 0 0 5px;
+	}
+
+	.txt {
+		display: table-cell;
+		vertical-align: middle;
+
+		@include respond-to(desktop, tablet) {
+			padding-left: percentage(25/580);
+		}
+	}
+
+	.content {
+		opacity: 0.5;
+	}
+}
+
+// Recursive
+
+#footer-recursive {
+	background-color: #318AB7;
+	font-family: open_sanssemibold;
+	font-size: 12px;
+	margin-bottom: 30px;
+	opacity: 0.6;
+	padding-bottom: 25px;
+	padding-top: 25px;
+
+	li {
+		margin-top: 20px;
+		text-transform: uppercase;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	ul {
+		@include respond-to(desktop) {
+			border-bottom: 1px solid #61ABCF;
+		}
+	}
+
+	@include respond-to(tablet) {
+		li {
+			display: inline-block;
+			padding-left: 15px;
+			width: 49%;
+		}
+	}
+
+	@include respond-to(desktop) {
+		overflow: hidden;
+
+		ul {
+			border-bottom-width: 0;
+			float: right;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 0 0 35px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+// Open sans font
+
+#navigation, #footer, #banner, #content,
+#global, .tag-items, .portlet-title-text  {
+	font-family: 'open_sansregular';
+}
+
+ .alloy-editor-wrapper, .asset-summary , .entry-content, .lfr-discussion-message, .entry-body {
+	color: $default-text-lighter;
+	font-family: 'open_sansregular';
+ }
+
+.entry-subtitle, .entry-title {
+	color: $dark-headers-color;
+	font-family: 'open_sanslight';
+	font-weight: normal;
+}
+
+// LINK COLORS - ENTRIES
+
+.entry-title a {
+	color: $corporate-1-color;
+}
+
+// "VIEW MORE" LINKS
+
+a.small.text-uppercase {
+	color: $corporate-1-color;
+	font-family: open_sanssemibold;
+	font-size: 12px;
+	text-decoration: underline;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// COLOR UNDERLINE
+
+u.theme-underlined {
+	border-bottom: 1px solid $corporate-1-bg-color;
+	font-style: italic;
+	font-weight: normal;
+	padding-bottom: 10px;
+	text-decoration: none;
+
+	@include respond-to(desktop) {
+		padding-bottom: 20px;
+	}
+}
+
+// HOME ALERT BOX
+
+.theme-alert {
+	background-color: $corporate-3-bg-color;
+	border: 1px solid #EDEDED;
+	color: $corporate-1-color;
+	font-weight: bold;
+	margin: 30px 0;
+	padding: 25px;
+	text-align: center;
+}

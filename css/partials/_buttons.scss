@@ -1,0 +1,23 @@
+@import "bourbon";
+@import "mixins";
+
+//////////// BUTTONS
+
+.btn-theme-default {
+	border-radius: 0;
+	border-width: 0;
+	color: $corporate-1-color;
+	font-family: open_sanssemibold;
+	font-size: 12px;
+	min-width: 262px;
+	outline-width: 0;
+	padding: 13px 20px;
+	text-transform: uppercase;
+
+	&:hover, &:focus, &:active {
+		background-color: rgba($corporate-3-bg-color, 0.2);
+		border-width: 0;
+		color: $corporate-3-color;
+		text-decoration: none;
+	}
+}

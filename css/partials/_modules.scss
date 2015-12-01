@@ -1,0 +1,288 @@
+// Modules
+
+// Common
+
+.mod {
+	.content {
+		font-size: 12px;
+
+		@include respond-to(desktop) {
+			font-size: 16px;
+		}
+	}
+
+	.content p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// HOME MAIN CAROUSEL
+
+#main-carousel {
+	margin-bottom: 40px;
+
+	.item {
+		background-color: $corporate-1-bg-color;
+
+		.item-wrapper {
+			overflow: hidden;
+			position: relative;
+		}
+
+		.item-wrapper > .col-sm-5.col-xs-12:first-child {
+			background-size: cover;
+			padding-bottom: 100%;
+
+			@include respond-to(tablet, desktop) {
+				bottom: 0;
+				left: 0;
+				padding-bottom: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+
+		.col-sm-5.col-sm-offset-6.col-xs-12 {
+			background-color: $corporate-1-bg-color;
+			color: $corporate-3-color;
+			padding-bottom: 20px;
+			padding-top: 20px;
+
+			@include respond-to(desktop) {
+				padding-bottom: 80px;
+				padding-top: 80px;
+			}
+		}
+	}
+
+	.small.text-uppercase {
+		font-size: 10px;
+		opacity: 0.5;
+
+		@include respond-to(tablet, desktop) {
+			font-size: 12px;
+			margin-bottom: 40px;
+		}
+	}
+
+	h2 {
+		font-family: open_sanslight;
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 100%;
+		margin-bottom: 10px;
+
+		@include respond-to(tablet, desktop) {
+			font-size: 58px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.lead {
+		margin-bottom: 50px;
+		opacity: 0.7;
+
+		@include respond-to(tablet, desktop) {
+			font-size: 16px;
+		}
+	}
+}
+
+// SECONDARY BACKGROUND COLOR
+
+.secondary-background-color {
+	background-color: $bg-color02;
+	padding: 0 0 30px ;
+
+	/*@include respond-to(desktop) {
+		padding: 40px 0;
+	}*/
+}
+
+// UPPER MODULES
+
+.upper-modules {
+	background-color: $bg-color02;
+
+	h2 {
+		color: #000;
+	}
+
+	p {
+		color: $default-text-lighter;
+	}
+
+	[class^="col-"] {
+		border-left: 1px solid #F3F4F6;
+		margin-bottom: 30px;
+		padding-top: 50px;
+	}
+}
+
+// VIDEO PREVIEW
+
+.video-preview {
+		background-color: $corporate-2-bg-color;
+		color: $corporate-3-color;
+
+		.text {
+			background-color: $corporate-2-bg-color;
+			font-size: 12px;
+			padding: 15px;
+
+			@include respond-to(tablet) {
+				padding: 15px;
+			}
+
+			@include respond-to(desktop) {
+				padding: 40px 15px;
+			}
+		}
+
+		p.small.text-uppercase {
+			font-family: open_sanssemibold;
+			font-size: 10px;
+			opacity: 0.5;
+
+				@include respond-to(tablet) {
+					margin-bottom: 30px;
+				}
+
+				@include respond-to(desktop) {
+					font-size: 12px;
+					margin-bottom: 80px;
+				}
+			}
+
+		.lead {
+			margin-bottom: 30px;
+			opacity: 0.7;
+
+			@include respond-to(tablet, desktop) {
+				font-size: 16px;
+				margin-bottom: 40px;
+			}
+		}
+
+	@include respond-to(tablet, desktop) {
+		.image {
+			padding: 0;
+
+				img {
+					height: auto;
+					width: 100%;
+				}
+		}
+	}
+
+	a.small.text-uppercase {
+		color: $corporate-3-color;
+	}
+}
+
+// Mod 03
+
+.mod-03 {
+	.img {
+		margin-bottom: 30px;
+	}
+
+	.txt {
+		margin-bottom: 25px;
+
+		@include respond-to(tablet, desktop) {
+			font-size: 12px;
+		}
+	}
+
+	.content {
+		margin-bottom: 24px;
+		opacity: 0.4;
+
+		@include respond-to(tablet, desktop) {
+			margin-bottom: 35px;
+			opacity: 1;
+		}
+	}
+}
+
+// TERTIARY BACKGROUND COLOR
+
+.tertiary-background-color  {
+	background-color: $bg-color03;
+	padding: 30px 0;
+
+	@include respond-to(desktop) {
+		padding: 40px 0;
+	}
+}
+
+// TEXT COLUMN
+
+.text-column {
+	color: $default-text-lighter;
+	margin-bottom: 45px;
+
+	h2 {
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: contain;
+		color: $default-text-dark;
+		font-family: open_sanslight;
+		font-size: 28px;
+		line-height: 136%;
+		margin-bottom: 30px;
+
+			@include respond-to(desktop) {
+				font-size: 58px;
+			}
+
+			&.background-image {
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+				@include respond-to(desktop) {
+					min-height: 365px;
+					padding: 125px 0 65px;
+				}
+			}
+		}
+
+	figure {
+		clear: both;
+		color: $default-text-dark;
+		font-family: open_sanssemibold;
+		font-size: 12px;
+		font-style: italic;
+		margin-top: 70px;
+
+		figcaption {
+			margin-top: 15px;
+			opacity: 0.4;
+		}
+	}
+}
+
+// BOTTOM MODULES
+
+.bottom-modules {
+	padding: 30px 0;
+
+	.content-wrapper {
+		background-color: $bg-color03;
+		background-color: $corporate-3-bg-color;
+		border: 1px solid #EDEDED;
+		border-top-width: 0;
+		padding: 15px;
+
+		@include respond-to(desktop) {
+			padding: 15px percentage(40/376);
+		}
+	}
+
+	h2 + p {
+		color: $default-text-lighter;
+		margin-bottom: 40px;
+	}
+}

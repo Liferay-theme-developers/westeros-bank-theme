@@ -8,9 +8,8 @@
 @import "partials/_buttons";
 @import "partials/_theme-header";
 @import "partials/_theme-footer";
-// .portlet-boundary_com_liferay_control_menu_web_portlet_ControlMenuPortlet_ {display: none}
 
-// General
+// COMMON
 
 footer, nav, header {
 	& ul, & li {
@@ -64,18 +63,4 @@ body {
 
 .lfr-portlet-title-editable .btn {
 	padding: 3px 10px;
-}
-
-// BLOGS
-
-@include respond-to(desktop) {
-	/*	.portlet-blogs .entry-body .cover-image-container {
-		height: 520px;
-	}
-
-/#portlet_com_liferay_blogs_web_portlet_BlogsPortlet .entry-title {
-		background-color: #FAFAFA;
-		margin-top: -100px;
-		padding: 86px 15px 0;
-	}*/
 }

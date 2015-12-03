@@ -4,24 +4,26 @@ $bg-color01: #FAFBFA;
 $bg-color02: #FFF;
 $bg-color03: #F5F5F5;
 
+// Background colors are separate from foreground colors to make it easier in the future to change them according to accessibility criteria
+
 // Blue
 
-$corporate-1-color: #3993BF;	// hsla(200, 54%, 49%, 1);
-$corporate-1-bg-color: #3993BF;	// hsla(200, 54%, 49%, 1);
+$corporate-1-color: #3993BF; // hsla(200, 54%, 49%, 1);
+$corporate-1-bg-color: #3993BF; // hsla(200, 54%, 49%, 1);
 
 // Red
 
-$corporate-2-color: #D95757;	// hsla(0, 63%, 60%, 1);
-$corporate-2-bg-color: #D95757;	// hsla(0, 63%, 60%, 1);
+$corporate-2-color: #D95757; // hsla(0, 63%, 60%, 1);
+$corporate-2-bg-color: #D95757; // hsla(0, 63%, 60%, 1);
 
 // White
 
-$corporate-3-color:	#FFF;		// hsla(0, 0, 100, 1);
-$corporate-3-bg-color: #FFF;		// hsla(0, 0, 100, 1);
+$corporate-3-color:	#FFF; // hsla(0, 0, 100, 1);
+$corporate-3-bg-color: #FFF; // hsla(0, 0, 100, 1);
 
 // Black - gray
 
-$default-text-dark: #0B1D26;		// hsla(0, 0%, 0%, 1);
+$default-text-dark: #0B1D26; // hsla(0, 0%, 0%, 1);
 $default-text-lighter: #8A9499;	// hsla(200, 7%, 57%, 1
 
 // Dark headers

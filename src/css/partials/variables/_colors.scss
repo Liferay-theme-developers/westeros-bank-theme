@@ -1,25 +1,28 @@
-// COLORS
-
-$bg-color01: #FAFBFA;
-$bg-color02: #FFF;
-$bg-color03: #F5F5F5;
 
 // Background colors are separate from foreground colors to make it easier in the future to change them according to accessibility criteria
 
+// Main background color
+$main-bg-color: #FAFBFA;
+
 // Blue
 
-$corporate-1-color: #3993BF; // hsla(200, 54%, 49%, 1);
-$corporate-1-bg-color: #3993BF; // hsla(200, 54%, 49%, 1);
+$brand-color-1: #3993BF; // hsla(200, 54%, 49%, 1);
+$brand-bg-color-1: #3993BF; // hsla(200, 54%, 49%, 1);
 
 // Red
 
-$corporate-2-color: #D95757; // hsla(0, 63%, 60%, 1);
-$corporate-2-bg-color: #D95757; // hsla(0, 63%, 60%, 1);
+$brand-color-2: #D95757; // hsla(0, 63%, 60%, 1);
+$brand-bg-color-2: #D95757; // hsla(0, 63%, 60%, 1);
 
 // White
 
-$corporate-3-color:	#FFF; // hsla(0, 0, 100, 1);
-$corporate-3-bg-color: #FFF; // hsla(0, 0, 100, 1);
+$brand-color-3:	#FFF; // hsla(0, 0, 100, 1);
+$brand-bg-color-3: #FFF; // hsla(0, 0, 100, 1);
+
+// Clear gray
+
+$brand-bg-color-4: #F5F5F5;
+
 
 // Black - gray
 

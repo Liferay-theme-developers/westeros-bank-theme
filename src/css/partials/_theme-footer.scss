@@ -1,9 +1,9 @@
 #footer {
-	background-color: $corporate-1-bg-color;
+	background-color: $brand-bg-color-1;
 	padding: 20px 0;
 
 	&, a {
-		color: $corporate-3-color;
+		color: $brand-color-3;
 	}
 
 	@include sm {

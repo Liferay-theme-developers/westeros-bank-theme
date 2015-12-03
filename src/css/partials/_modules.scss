@@ -22,7 +22,7 @@
 	margin-bottom: 40px;
 
 	.item {
-		background-color: $corporate-1-bg-color;
+		background-color: $brand-bg-color-1;
 
 		.item-wrapper {
 			overflow: hidden;
@@ -43,8 +43,8 @@
 		}
 
 		.col-sm-5.col-sm-offset-6.col-xs-12 {
-			background-color: $corporate-1-bg-color;
-			color: $corporate-3-color;
+			background-color: $brand-bg-color-1;
+			color: $brand-color-3;
 			padding-bottom: 20px;
 			padding-top: 20px;
 
@@ -91,14 +91,14 @@
 // SECONDARY BACKGROUND COLOR
 
 .secondary-background-color {
-	background-color: $bg-color02;
+	background-color: $brand-bg-color-3;
 	padding: 0 0 30px ;
 }
 
 // UPPER MODULES
 
 .upper-modules {
-	background-color: $bg-color02;
+	background-color: $brand-bg-color-3;
 
 	h2 {
 		color: #000;
@@ -118,11 +118,11 @@
 // VIDEO PREVIEW
 
 .video-preview {
-		background-color: $corporate-2-bg-color;
-		color: $corporate-3-color;
+		background-color: $brand-bg-color-2;
+		color: $brand-color-3;
 
 		.text {
-			background-color: $corporate-2-bg-color;
+			background-color: $brand-bg-color-2;
 			font-size: 12px;
 			padding: 15px;
 
@@ -172,7 +172,7 @@
 	}
 
 	a.small.text-uppercase {
-		color: $corporate-3-color;
+		color: $brand-color-3;
 	}
 }
 
@@ -205,7 +205,7 @@
 // TERTIARY BACKGROUND COLOR
 
 .tertiary-background-color  {
-	background-color: $bg-color03;
+	background-color: $brand-bg-color-4;
 	padding: 30px 0;
 
 	@include media-query($breakpoint_tablet, null) {
@@ -266,8 +266,8 @@
 	padding: 30px 0;
 
 	.content-wrapper {
-		background-color: $bg-color03;
-		background-color: $corporate-3-bg-color;
+		background-color: $brand-bg-color-4;
+		background-color: $brand-bg-color-3;
 		border: 1px solid #EDEDED;
 		border-top-width: 0;
 		padding: 15px;

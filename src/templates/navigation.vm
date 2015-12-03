@@ -17,7 +17,7 @@
 	</nav>
 
 	<nav class="$nav_css_class site-navigation" id="navigation" role="navigation">
-		<ul aria-label="#language ("site-pages")" class="nav navbar-site nav-justified" role="menubar">
+		<ul aria-label="#language ("site-pages")" class="nav nav-justified navbar-site" role="menubar">
 			<h1 class="hide-accessible">#language ("navigation")</h1>
 
 			#foreach ($nav_item in $nav_items)

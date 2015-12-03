@@ -1,7 +1,5 @@
-*.DS_Store
-/bower_components/
-/build/
-/dist/
-/node_modules/
-gulpfile.js
+bower_components
+node_modules
+build
+dist
 liferay-theme.json

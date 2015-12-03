@@ -6,7 +6,7 @@
 		color: $corporate-3-color;
 	}
 
-	@include respond-to(tablet, desktop) {
+	@include sm {
 		padding: 40px 0 20px;
 	}
 
@@ -19,7 +19,7 @@
 }
 
 #footer-modules {
-	@include respond-to(tablet, desktop) {
+	@include sm {
 		margin-bottom: 50px;
 		padding: 10px 0;
 		position: relative;
@@ -43,7 +43,7 @@
 	margin-bottom: 30px;
 	width: 100%;
 
-	@include respond-to(desktop) {
+	@include media-query($breakpoint_tablet, null) {
 		margin-bottom: 45px;
 
 		&:last-child {
@@ -85,7 +85,7 @@
 		display: table-cell;
 		vertical-align: middle;
 
-		@include respond-to(desktop, tablet) {
+		@include sm {
 			padding-left: percentage(25/580);
 		}
 	}
@@ -116,12 +116,12 @@
 	}
 
 	ul {
-		@include respond-to(desktop) {
+		@include media-query($breakpoint_tablet, null) {
 			border-bottom: 1px solid #61ABCF;
 		}
 	}
 
-	@include respond-to(tablet) {
+	@include media-query(sm, $screen-sm-max) {
 		li {
 			display: inline-block;
 			padding-left: 15px;
@@ -129,7 +129,7 @@
 		}
 	}
 
-	@include respond-to(desktop) {
+	@include media-query($breakpoint_tablet, null) {
 		overflow: hidden;
 
 		ul {

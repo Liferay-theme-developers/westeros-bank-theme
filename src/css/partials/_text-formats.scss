@@ -44,7 +44,7 @@ u.theme-underlined {
 	padding-bottom: 10px;
 	text-decoration: none;
 
-	@include respond-to(desktop) {
+	@include media-query($breakpoint_tablet, null) {
 		padding-bottom: 20px;
 	}
 }

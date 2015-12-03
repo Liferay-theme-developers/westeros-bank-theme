@@ -49,7 +49,7 @@
 	}
 
 	#heading {
-		@include respond-to(desktop, tablet) {
+		@include sm {
 			margin-left: 12px;
 		}
 
@@ -62,7 +62,7 @@
 	}
 
 	#global .navbar-nav {
-		@include respond-to(desktop, tablet) {
+		@include sm {
 			margin-left: 60px;
 		}
 
@@ -71,7 +71,7 @@
 				margin: 0 15px;
 				text-transform: uppercase;
 
-				@include respond-to(desktop, tablet) {
+				@include sm {
 					font-size: 12px;
 					margin: 16px 15px;
 					padding: 0;
@@ -86,7 +86,7 @@
 	}
 
 	.navbar-form {
-		@include respond-to(desktop, tablet) {
+		@include sm {
 			margin-left: 30px;
 		}
 
@@ -100,11 +100,11 @@
 			height: auto;
 			padding-right: 40px;
 
-			@include respond-to(desktop) {
+			@include media-query($breakpoint_tablet, null) {
 				max-width: 290px;
 			}
 
-			@include respond-to(tablet) {
+			@include media-query(sm, $screen-sm-max) {
 				max-width: 200px;
 			}
 		}
@@ -136,7 +136,7 @@
 		float: left;
 		width: 100%;
 
-		@include respond-to(desktop, tablet) {
+		@include sm {
 			margin-top: 24px;
 		}
 
@@ -145,7 +145,7 @@
 				color: #999;
 				text-align: left;
 
-				@include respond-to(desktop, tablet) {
+				@include sm {
 					border-top: 1px solid #EDEDED;
 					margin-right: 20px;
 					padding: 12px 12px 12px 0;

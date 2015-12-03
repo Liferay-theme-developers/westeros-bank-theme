@@ -6,7 +6,7 @@
 	.content {
 		font-size: 12px;
 
-		@include respond-to(desktop) {
+		@include media-query($breakpoint_tablet, null) {
 			font-size: 16px;
 		}
 	}
@@ -33,7 +33,7 @@
 			background-size: cover;
 			padding-bottom: 100%;
 
-			@include respond-to(tablet, desktop) {
+			@include sm {
 				bottom: 0;
 				left: 0;
 				padding-bottom: 0;
@@ -48,7 +48,7 @@
 			padding-bottom: 20px;
 			padding-top: 20px;
 
-			@include respond-to(desktop) {
+			@include media-query($breakpoint_tablet, null) {
 				padding-bottom: 80px;
 				padding-top: 80px;
 			}
@@ -59,7 +59,7 @@
 		font-size: 10px;
 		opacity: 0.5;
 
-		@include respond-to(tablet, desktop) {
+		@include sm {
 			font-size: 12px;
 			margin-bottom: 40px;
 		}
@@ -72,7 +72,7 @@
 		line-height: 100%;
 		margin-bottom: 10px;
 
-		@include respond-to(tablet, desktop) {
+		@include sm {
 			font-size: 58px;
 			margin-bottom: 40px;
 		}
@@ -82,7 +82,7 @@
 		margin-bottom: 50px;
 		opacity: 0.7;
 
-		@include respond-to(tablet, desktop) {
+		@include sm {
 			font-size: 16px;
 		}
 	}
@@ -93,7 +93,6 @@
 .secondary-background-color {
 	background-color: $bg-color02;
 	padding: 0 0 30px ;
-
 }
 
 // UPPER MODULES
@@ -127,11 +126,11 @@
 			font-size: 12px;
 			padding: 15px;
 
-			@include respond-to(tablet) {
+			@include media-query(sm, $screen-sm-max) {
 				padding: 15px;
 			}
 
-			@include respond-to(desktop) {
+			@include media-query($breakpoint_tablet, null) {
 				padding: 40px 15px;
 			}
 		}
@@ -141,11 +140,11 @@
 			font-size: 10px;
 			opacity: 0.5;
 
-				@include respond-to(tablet) {
+				@include media-query(sm, $screen-sm-max) {
 					margin-bottom: 30px;
 				}
 
-				@include respond-to(desktop) {
+				@include media-query($breakpoint_tablet, null) {
 					font-size: 12px;
 					margin-bottom: 80px;
 				}
@@ -155,13 +154,13 @@
 			margin-bottom: 30px;
 			opacity: 0.7;
 
-			@include respond-to(tablet, desktop) {
+			@include sm {
 				font-size: 16px;
 				margin-bottom: 40px;
 			}
 		}
 
-	@include respond-to(tablet, desktop) {
+	@include sm {
 		.image {
 			padding: 0;
 
@@ -187,7 +186,7 @@
 	.txt {
 		margin-bottom: 25px;
 
-		@include respond-to(tablet, desktop) {
+		@include sm {
 			font-size: 12px;
 		}
 	}
@@ -196,7 +195,7 @@
 		margin-bottom: 24px;
 		opacity: 0.4;
 
-		@include respond-to(tablet, desktop) {
+		@include sm {
 			margin-bottom: 35px;
 			opacity: 1;
 		}
@@ -209,7 +208,7 @@
 	background-color: $bg-color03;
 	padding: 30px 0;
 
-	@include respond-to(desktop) {
+	@include media-query($breakpoint_tablet, null) {
 		padding: 40px 0;
 	}
 }
@@ -230,7 +229,7 @@
 		line-height: 136%;
 		margin-bottom: 30px;
 
-			@include respond-to(desktop) {
+			@include media-query($breakpoint_tablet, null) {
 				font-size: 58px;
 			}
 
@@ -239,7 +238,7 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 
-				@include respond-to(desktop) {
+				@include media-query($breakpoint_tablet, null) {
 					min-height: 365px;
 					padding: 125px 0 65px;
 				}
@@ -273,7 +272,7 @@
 		border-top-width: 0;
 		padding: 15px;
 
-		@include respond-to(desktop) {
+		@include media-query($breakpoint_tablet, null) {
 			padding: 15px percentage(40/376);
 		}
 	}

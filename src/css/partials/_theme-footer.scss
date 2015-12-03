@@ -7,7 +7,7 @@
 	}
 
 	@include respond-to(tablet, desktop) {
-		padding: 40px 0 /*20px*/ 20px;
+		padding: 40px 0 20px;
 	}
 
 	h2 {
@@ -20,9 +20,19 @@
 
 #footer-modules {
 	@include respond-to(tablet, desktop) {
-		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADAQMAAABoE/fBAAAAA3NCSVQICAjb4U/gAAAABlBMVEVep8sAAADwqPrJAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADEzLzExLzE1DzJ2eAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAALSURBVAiZY2AAAQAABgAB5of+fwAAAABJRU5ErkJggg==) top center repeat-y;
 		margin-bottom: 50px;
 		padding: 10px 0;
+		position: relative;
+		&::before {
+			content:" ";
+			display:block;
+			position: absolute;
+			top: 0;
+			height: 100%;
+			right: 50%;
+			border-right: 1px solid #5ea7cb;
+			width: 1px;
+		}
 	}
 }
 

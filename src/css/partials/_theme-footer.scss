@@ -16,9 +16,7 @@
 
 	h2 {
 		font-family: open_sanssemibold;
-		font-size: 12px;
 		margin-bottom: 40px;
-		text-transform: uppercase;
 	}
 }
 
@@ -58,31 +56,17 @@
 
 	// Icons
 
-	[class^="img-"] {
-		background: #3D97C4 url(../images/ui/mod-footer-sprite.png) center 14px no-repeat;
+	.user-icon {
+		background: rgba($brand-color-3, 0.06);
 		border-radius: 50%;
+		color: $brand-color-3;
 		display: table-cell;
-		height: 64px;
-		width: 64px;
-	}
-
-	.img-2 {
-		background-position: center -49px;
-	}
-
-	.img-3 {
-		background-position: center -111px;
-	}
-
-	.img-4 {
-		background-position: center -174x;
 	}
 
 	// Text
 
 	h3 {
 		font-family: open_sanssemibold;
-		font-size: 20px;
 		margin: 0 0 5px;
 	}
 

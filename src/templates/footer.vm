@@ -7,7 +7,7 @@
 			</div>
 			<div class="row" id="footer-modules">
 				<div class="col-sm-6">
-					<div class="mod mod-footer">
+					<div class="mod-footer">
 						<div class="img img-1"></div>
 						<div class="txt">
 							<h3><a href="#">901 020 901</a></h3>
@@ -16,7 +16,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mod mod-footer">
+					<div class="mod-footer">
 						<div class="img img-2"></div>
 						<div class="txt">
 							<h3><a href="#">Sit steamed irish</a></h3>
@@ -24,13 +24,13 @@
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="mod mod-footer">
+					<div class="mod-footer">
 						<div class="img img-3"></div>
 						<div class="txt">
 							<h3><a href="#">Sugar, steamed et variety</a></h3>
 						</div>
 					</div>
-					<div class="mod mod-footer">
+					<div class="mod-footer">
 						<div class="img img-4"></div>
 						<div class="txt">
 							<h3><a href="#">Ut acerbic barista</a></h3>

@@ -1,9 +1,13 @@
 #footer {
 	background-color: $brand-bg-color-1;
+	color: $brand-color-3;
 	padding: 20px 0;
 
-	&, a {
+	a {
 		color: $brand-color-3;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
 	}
 
 	@include sm {
@@ -54,7 +58,7 @@
 
 	// Icons
 
-	.img {
+	[class^="img-"] {
 		background: #3D97C4 url(../images/ui/mod-footer-sprite.png) center 14px no-repeat;
 		border-radius: 50%;
 		display: table-cell;
@@ -110,46 +114,16 @@
 #footer-recursive {
 	background-color: #318AB7;
 	font-family: open_sanssemibold;
-	font-size: 12px;
 	margin-bottom: 30px;
 	opacity: 0.6;
-	padding-bottom: 25px;
-	padding-top: 25px;
-
-	li {
-		margin-top: 20px;
-		text-transform: uppercase;
-
-		&:first-child {
-			margin-top: 0;
-		}
-	}
 
 	ul {
 		@include media-query($breakpoint_tablet, null) {
 			border-bottom: 1px solid #61ABCF;
 		}
-	}
 
-	@include media-query(sm, $screen-sm-max) {
-		li {
-			display: inline-block;
-			padding-left: 15px;
-			width: 49%;
-		}
-	}
-
-	@include media-query($breakpoint_tablet, null) {
-		overflow: hidden;
-
-		ul {
+		@include media-query($breakpoint_tablet, null) {
 			border-bottom-width: 0;
-			float: right;
-		}
-
-		li {
-			display: inline-block;
-			margin: 0 0 0 35px;
 		}
 	}
 }

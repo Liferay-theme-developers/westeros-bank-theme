@@ -1,14 +1,12 @@
-// Open sans font
-
 #navigation, #footer, #banner, #content,
 #global, .tag-items, .portlet-title-text  {
 	font-family: 'open_sansregular';
 }
 
- .alloy-editor-wrapper, .asset-summary , .entry-content, .lfr-discussion-message, .entry-body {
+.alloy-editor-wrapper, .asset-summary , .entry-content, .lfr-discussion-message, .entry-body {
 	color: $default-text-lighter;
 	font-family: 'open_sansregular';
- }
+}
 
 .entry-subtitle, .entry-title {
 	color: $dark-headers-color;
@@ -16,13 +14,9 @@
 	font-weight: normal;
 }
 
-// LINK COLORS - ENTRIES
-
 .entry-title a {
 	color: $brand-color-1;
 }
-
-// "VIEW MORE" LINKS
 
 a.small.text-uppercase {
 	color: $brand-color-1;
@@ -35,8 +29,6 @@ a.small.text-uppercase {
 	}
 }
 
-// COLOR UNDERLINE
-
 u.theme-underlined {
 	border-bottom: 1px solid $brand-bg-color-1;
 	font-style: italic;
@@ -48,8 +40,6 @@ u.theme-underlined {
 		padding-bottom: 20px;
 	}
 }
-
-// HOME ALERT BOX
 
 .theme-alert {
 	background-color: $brand-bg-color-3;

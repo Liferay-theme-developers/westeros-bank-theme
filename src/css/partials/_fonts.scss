@@ -1,6 +1,5 @@
 @import "bourbon";
 
-// Open Sans
 @include font-face("open_sansregular", "../fonts/opensans-regular-webfont", normal);
 @include font-face("open_sansregular", "../fonts/opensans-bold-webfont", bold);
 @include font-face("open_sansregular", "../fonts/opensans-italic-webfont", normal, italic);

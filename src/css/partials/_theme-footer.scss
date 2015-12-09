@@ -39,8 +39,6 @@
 	}
 }
 
-// Modules
-
 .mod-footer {
 	display: table;
 	margin-bottom: 30px;
@@ -54,16 +52,12 @@
 		}
 	}
 
-	// Icons
-
 	.user-icon {
 		background: rgba($brand-color-3, 0.06);
 		border-radius: 50%;
 		color: $brand-color-3;
 		display: table-cell;
 	}
-
-	// Text
 
 	h3 {
 		font-family: open_sanssemibold;
@@ -92,8 +86,6 @@
 		margin-bottom: 0;
 	}
 }
-
-// Recursive
 
 #footer-recursive {
 	background-color: #318AB7;

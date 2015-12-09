@@ -6,8 +6,6 @@
 @import "partials/_theme-header";
 @import "partials/_theme-footer";
 
-// COMMON
-
 footer, nav, header {
 	& ul, & li {
 		list-style: none;
@@ -23,8 +21,6 @@ footer, nav, header {
 .form-control {
 	background-color: transparent;
 }
-
-//
 
 body {
 	background-color: $main-bg-color;

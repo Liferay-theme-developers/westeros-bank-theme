@@ -1,0 +1,25 @@
+#banner {
+	padding-bottom: 10px;
+	position: relative;
+
+	a:active, a:hover, a:focus {
+		text-decoration: none;
+	}
+
+	.navbar-toggle {
+		margin: 12px 0;
+	}
+
+	#heading {
+		@include sm {
+			margin-left: 12px;
+		}
+
+		.site-name {
+			font-size: 150%;
+			letter-spacing: 2px;
+			margin-left: 20px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -5,7 +5,7 @@
 	}
 
 	.navbar-inverse {
-		background: #000;
+		background: $main-black;
 		border-width: 0;
 		min-height: 28px;
 	}
@@ -43,7 +43,7 @@
 
 		.nav > li {
 			& > a {
-				color: #999;
+				color: $default-text-dark;
 				text-align: left;
 
 				@include sm {
@@ -63,16 +63,17 @@
 
 			&:hover > a, &.hover > a, &.active > a {
 				background-color: none;
-				color: #000;
+				color: $main-black;
 			}
 
-			.dropdown-menu {
+			&.lfr-nav-hover .dropdown-menu {
+				display: block;
 				left: 0;
 				margin-top: 0;
 				right: 0;
 
 				.active > a {
-					color: #FFF;
+					font-weight: bold;
 				}
 			}
 		}

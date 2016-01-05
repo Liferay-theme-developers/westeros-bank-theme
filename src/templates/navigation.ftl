@@ -1,11 +1,9 @@
 <div aria-expanded="false" class="collapse navbar-collapse" id="navigationCollapse">
 	<nav id="search" role="navigation">
 		<div class="navbar-form navbar-right" role="search">
-			#set ($VOID = $velocityPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone"))
-
-			#search($velocityPortletPreferences.toString())
-
-			#set ($VOID = $velocityPortletPreferences.reset())
+			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+			<@search default_preferences="${freeMarkerPortletPreferences}" />
+			<#assign VOID = velocityPortletPreferences.reset()>
 		</div>
 	</nav>
 
@@ -16,64 +14,64 @@
 		</ul>
 	</nav>
 
-	<nav class="$nav_css_class site-navigation" id="navigation" role="navigation">
-		<ul aria-label="#language ("site-pages")" class="nav nav-justified navbar-site" role="menubar">
-			<h1 class="hide-accessible">#language ("navigation")</h1>
+	<nav class="${nav_css_class} site-navigation" id="navigation" role="navigation">
 
-			#foreach ($nav_item in $nav_items)
-				#set ($nav_item_attr_selected="")
-				#set ($nav_item_attr_has_popup="")
-				#set ($nav_item_caret="")
-				#set ($nav_item_css_class="lfr-nav-item")
-				#set ($nav_item_href_link="")
-				#set ($nav_item_link_css_class="")
+		<ul aria-label="<#call language> ("site-pages")" class="nav nav-justified navbar-site" role="menubar">
+			<h1 class="hide-accessible"><#call language> ("navigation")</h1>
 
-				#if ($nav_item.hasChildren())
-					#set ($nav_item_attr_has_popup="aria-haspopup='true'")
-					#set ($nav_item_caret='<i class="icon-caret-down"></i>')
-					#set ($nav_item_css_class="$nav_item_css_class dropdown")
-					#set ($nav_item_link_css_class="dropdown-toggle")
-				#end
+			<#foreach nav_item in nav_items>
+				<#assign nav_item_attr_selected = "">
+				<#assign nav_item_attr_has_popup = "">
+				<#assign nav_item_caret = "">
+				<#assign nav_item_css_class = "lfr-nav-item">
+				<#assign nav_item_href_link = "">
+				<#assign nav_item_link_css_class = "">
 
-				#if ($nav_item.isBrowsable())
-					#set ($nav_item_href_link="href='$nav_item.getURL()'")
-				#end
+				<#if nav_item.hasChildren()>
+					<#assign nav_item_attr_has_popup = "aria-haspopup='true'">
+					<#assign nav_item_caret = "<i class=\"icon-caret-down\"></i>">
+					<#assign nav_item_css_class = nav_item_css_class + " dropdown">
+					<#assign nav_item_link_css_class = "dropdown-toggle">
+				</#if>
 
-				#if ($nav_item.isSelected())
-					#set ($nav_item_attr_selected="aria-selected='true'")
-					#set ($nav_item_css_class="$nav_item_css_class selected active")
-				#end
+				<#if nav_item.isBrowsable()>
+					<#assign nav_item_href_link = "href='" + nav_item.getURL() + "'">
+				</#if>
 
-				<li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
-					<a aria-labelledby="layout_$nav_item.getLayoutId()" $nav_item_attr_has_popup class="$nav_item_link_css_class" $nav_item_href_link $nav_item.getTarget() role="menuitem">
-						<span>$nav_item.icon() $nav_item.getName()</span>
-						$nav_item_caret
+				<#if nav_item.isSelected()>
+					<#assign nav_item_attr_selected = "aria-selected='true'">
+					<#assign nav_item_css_class = nav_item_css_class + " selected active">
+				</#if>
+
+				<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" ${nav_item_attr_selected} role="presentation">
+					<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} class="${nav_item_link_css_class}" ${nav_item_href_link} ${nav_item.getTarget()} role="menuitem">
+						<span>${nav_item.icon()} ${nav_item.getName()}</span>
+						${nav_item_caret}
 					</a>
 
-					#if ($nav_item.hasChildren())
+					<#if nav_item.hasChildren()>
 						<ul aria-expanded="false" class="child-menu dropdown-menu" role="menu">
-							#foreach ($nav_child in $nav_item.getChildren())
-								#set ($nav_child_attr_selected="")
-								#set ($nav_child_css_class="lfr-nav-item")
-								#set ($nav_child_href_link="")
+							<#foreach nav_child in nav_item.getChildren()>
+								<#assign nav_child_attr_selected = "">
+								<#assign nav_child_css_class = "lfr-nav-item">
+								<#assign nav_child_href_link = "">
 
-								#if ($nav_child.isBrowsable())
-									#set ($nav_child_href_link="href='$nav_child.getURL()'")
-								#end
-
-								#if ($nav_child.isSelected())
-									#set ($nav_child_attr_selected="aria-selected='true'")
-									#set ($nav_child_css_class="active selected")
-								#end
-
-								<li class="$nav_child_css_class" id="layout_$nav_child.getLayoutId()" $nav_child_attr_selected role="presentation">
-									<a aria-labelledby="layout_$nav_child.getLayoutId()" $nav_child_href_link $nav_child.getTarget() role="menuitem">$nav_child.getName()</a>
+								<#if nav_child.isBrowsable()>
+									<#assign nav_child_href_link = "href='" + nav_child.getURL() + "'">
+								</#if>
+								<#if nav_child.isSelected()>
+									<#assign nav_child_attr_selected = "aria-selected='true'">
+									<#assign nav_child_css_class = "active selected">
+								</#if>
+								<li class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" ${nav_child_attr_selected} role="presentation">
+									<a aria-labelledby="layout_${nav_child.getLayoutId()}" ${nav_child_href_link} ${nav_child.getTarget()} role="menuitem">${nav_child.getName()}</a>
 								</li>
-							#end
+							</#foreach>
 						</ul>
-					#end
+					</#if>
 				</li>
-			#end
+			</#foreach>
+
 		</ul>
 	</nav>
 </div>

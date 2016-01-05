@@ -42,24 +42,24 @@
 		<nav id="footer-recursive">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-right small text-uppercase" role="menubar">
-					#if (!$is_signed_in)
+					<#if !is_signed_in>
 						<li role="presentation">
-							<a data-redirect="$is_login_redirect_required" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+							<a data-redirect="${is_login_redirect_required}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
 						</li>
-					#end
+					</#if>
 
-					#foreach ($nav_item in $nav_items)
+					<#foreach nav_item in nav_items>
 						<li role="presentation">
-							<a aria-labelledby="layout_$nav_item.getLayoutId()" href="$nav_item.getURL()" $nav_item.getTarget() role="menuitem">
-								$nav_item.getName()
+							<a aria-labelledby="layout_${nav_item.getLayoutId()}" href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
+								${nav_item.getName()}
 							</a>
 						</li>
-					#end
+					</#foreach>
 				</ul>
 			</div>
 		</nav>
 		<div class="container">
-			<p><small>#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a></small></p>
+			<p><small><@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a></small></p>
 		</div>
 
 	</footer>

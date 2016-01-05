@@ -5,15 +5,15 @@
 
 		<!-- Indicators -->
 		<ol class="carousel-indicators hidden-sm hidden-xs">
-			<li class="active" data-slide-to="0" data-target="#main-carousel"></li>
-			<li data-slide-to="1" data-target="#main-carousel"></li>
-			<li data-slide-to="2" data-target="#main-carousel"></li>
+			<li class="active" data-slide-to="0" data-target="<#call main>-carousel"></li>
+			<li data-slide-to="1" data-target="<#call main>-carousel"></li>
+			<li data-slide-to="2" data-target="<#call main>-carousel"></li>
 		</ol>
 
 		<div class="carousel-inner gallery-xxl" role="listbox">
 			<div class="active item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url($images_folder/content/487x529_01.jpg)">
+					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_01.jpg)">
 						</div>
 					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Shot decaffeinated brewed</p>
@@ -25,7 +25,7 @@
 			</div>
 			<div class="item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url($images_folder/content/487x529_02.jpg)">
+					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_02.jpg)">
 					</div>
 					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Trade grounds</p>
@@ -37,7 +37,7 @@
 			</div>
 			<div class="item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url($images_folder/content/487x529_03.jpg)">
+					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_03.jpg)">
 					</div>
 					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Aroma cinnamon et coffee</p>
@@ -58,19 +58,19 @@
 	<div class="upper-modules">
 		<section class="container-fluid-1280">
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="$images_folder/content/280x100-01.png" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/280x100-01.png" />
 				<h2>Latte crema doppio carajillo</h2>
 				<p>Kopi-luwak medium siphon french press, foam aroma grinder robusta ristretto. Cup aroma spoon decaffeinated foam cinnamon robusta single shot.</p>
 				<p><a class="small text-uppercase" href="#"><strong>Whipped affogato percolator</strong></a></p>
 			</div>
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="$images_folder/content/280x100-02.png" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/280x100-02.png" />
 				<h2>Spoon crema galão</h2>
 				<p>Latte extra crema doppio carajillo skinny milk bar sweet in variety. Sit cup sit body, dark, redeye, filter mug et extra sugar arabica rich beans extraction.</p>
 				<p><a class="small text-uppercase" href="#"><strong>Whipped affogato decaffeinated</strong></a></p>
 			</div>
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="$images_folder/content/280x100-03.png" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/280x100-03.png" />
 				<h2>Milk trifecta cup</h2>
 				<p>Saucer, bar americano, robusta galão doppio half and half siphon bar grounds barista. Eu turkish robusta eu, caramelization caffeine.</p>
 				<p><a class="small text-uppercase" href="#"><strong>Whipped affogato chicory</strong></a></p>
@@ -89,11 +89,11 @@
 				<p><a class="small text-uppercase" href="#"><strong>Cup aroma spoon</strong></a></p>
 			</div>
 			<div class="col-sm-6 image">
-				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/delete-file-video-home-488x530.jpg" /></a>
+				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/delete-file-video-home-488x530.jpg" /></a>
 			</div>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-12">
-			<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="$images_folder/content/165x165.jpg" />
+			<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/165x165.jpg" />
 			<p>Spoon crema, galão dripper galão affogato eu brewed froth. Latte extra crema doppio carajillo skinny milk bar sweet in variety. Eu turkish robusta eu, caramelization caffeine café au lait coffee.</p>
 			<p><a class="small text-uppercase" href="#"><strong>Latte decaffeinated</strong></a></p>
 		</div>
@@ -106,13 +106,13 @@
 <div class="text-column">
 	<section class="container-fluid-1280">
 		<div class="col-md-8 col-md-offset-2">
-			<h2 class="background-image text-center" style="background-image: url($images_folder/content/nepal-background.png)">Roast java aromatic chicory ut <u class="theme-underlined">mazagran</u></h2>
+			<h2 class="background-image text-center" style="background-image: url(${images_folder}/content/nepal-background.png)">Roast java aromatic chicory ut <u class="theme-underlined">mazagran</u></h2>
 		</div>
 		<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 			<p>Aftertaste instant, grounds, java dripper saucer single origin barista and viennese frappuccino blue mountain. Steamed saucer pumpkin spice mocha body cultivar cappuccino crema cortado carajillo. Eu frappuccino eu java decaffeinated java lungo dripper frappuccino extra decaffeinated single origin.</p>
 		</div>
 		<figure class="col-md-8 col-md-offset-2">
-			<img alt="[Insert alternative description here]" class="img-responsive img-spacing" src="$images_folder/content/nepal-main-image.jpg" />
+			<img alt="[Insert alternative description here]" class="img-responsive img-spacing" src="${images_folder}/content/nepal-main-image.jpg" />
 			<figcaption>Siphon, instant, whipped, ristretto crema et milk carajillo.</figcaption>
 		</figure>
 		<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
@@ -146,7 +146,7 @@
 	<div class="bottom-modules">
 		<section class="container-fluid-1280">
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x203_01.jpg" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/360x203_01.jpg" />
 				<div class="content-wrapper">
 					<h2>Latte extra carajillo</h2>
 					<p>Kopi-luwak medium siphon french press, foam aroma grinder robusta ristretto. Extra eu java brewed.</p>
@@ -154,7 +154,7 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x203_02.jpg" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/360x203_02.jpg" />
 				<div class="content-wrapper">
 					<h2>Crema galão ristretto</h2>
 					<p>Latte extra crema doppio carajillo skinny milk bar sweet in variety. Sit cup sit body, dark, redeye, filter mug.</p>
@@ -162,7 +162,7 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x203_03.jpg" />
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/360x203_03.jpg" />
 				<div class="content-wrapper">
 					<h2>Caramelization so café</h2>
 					<p>Saucer, bar americano, robusta galão doppio half and half siphon bar grounds barista.</p>

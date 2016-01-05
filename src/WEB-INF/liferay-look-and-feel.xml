@@ -6,7 +6,7 @@
 		<version>7.0.0+</version>
 	</compatibility>
 	<theme id="westeros-bank" name="westeros-bank">
-		<template-extension>vm</template-extension>
+		<template-extension>ftl</template-extension>
 
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>

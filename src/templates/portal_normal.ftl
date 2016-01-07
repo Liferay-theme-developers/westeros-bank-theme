@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <#include init />
+
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
 
 <head>
@@ -32,10 +33,9 @@
 							<li><a href="#">OFICINAS Y CAJEROS</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<#assign VOID = velocityPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
-							<#call user_personal_bar>(${velocityPortletPreferences.toString()})
-
-							<#assign VOID = velocityPortletPreferences.reset()>
+							<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+							<@liferay.user_personal_bar />
+							<#assign VOID = freeMarkerPortletPreferences.reset()>
 						</ul>
 
 						<#if !is_signed_in>
@@ -50,23 +50,17 @@
 
 		<header class="container-fluid-1280" id="banner" role="banner">
 			<div class="navbar-header" id="heading">
-				<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="<#call navigationCollapse>" data-toggle="collapse" type="button">
+				<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="#navigationCollapse>" data-toggle="collapse" type="button">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="${logo_css_class}" href="${site_default_url}" key="go-to-x" />" title="<@liferay.language_format arguments="${site_name}">
-					<img alt="${logo_description}" height="56" src="${images_folder}/westeros-bank-logo.png" />
-					<#--<img alt="$logo_description" height="56" src="$site_logo" />
--->				</a>
+				<a class="$logo_css_class" href="$site_default_url" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+					<img alt="$logo_description" height="56" src="$images_folder/westeros-bank-logo.png" />
+				</a>
 
-				<#--if ($show_site_name)
--->				<#--	<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
--->				<#--		$site_name
--->				<#--	</span>
--->				<#--end
--->			</div>
+			</div>
 
 			<#if has_navigation && is_setup_complete>
 				<#include "${full_templates_path}/navigation.ftl" />

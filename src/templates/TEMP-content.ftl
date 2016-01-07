@@ -5,9 +5,9 @@
 
 		<!-- Indicators -->
 		<ol class="carousel-indicators hidden-sm hidden-xs">
-			<li class="active" data-slide-to="0" data-target="<#call main>-carousel"></li>
-			<li data-slide-to="1" data-target="<#call main>-carousel"></li>
-			<li data-slide-to="2" data-target="<#call main>-carousel"></li>
+			<li class="active" data-slide-to="0" data-target="main-carousel"></li>
+			<li data-slide-to="1" data-target="main-carousel"></li>
+			<li data-slide-to="2" data-target="main-carousel"></li>
 		</ol>
 
 		<div class="carousel-inner gallery-xxl" role="listbox">

@@ -46,7 +46,7 @@
 			<ul class="nav navbar-nav navbar-right small text-uppercase" role="menubar">
 				<#if !is_signed_in>
 					<li role="presentation">
-						<a data-redirect="${is_login_redirect_required}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
+						<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
 					</li>
 				</#if>
 

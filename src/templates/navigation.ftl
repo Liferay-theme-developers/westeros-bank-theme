@@ -27,7 +27,6 @@
 				<#assign nav_item_link_css_class = "">
 				<#assign nav_item_layout = nav_item.getLayout() />
 
-
 				<#if nav_item.hasChildren()>
 					<#assign nav_item_attr_has_popup = "aria-haspopup='true'">
 					<#assign nav_item_caret = "<i class=\"icon-caret-down\"></i>">

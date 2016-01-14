@@ -46,7 +46,6 @@
 				<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" ${nav_item_attr_selected} role="presentation">
 					<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} class="${nav_item_link_css_class}" ${nav_item_href_link} ${nav_item.getTarget()} role="menuitem">
 						<span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span>
-						${nav_item_caret}
 					</a>
 
 					<#if nav_item.hasChildren()>

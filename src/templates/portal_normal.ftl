@@ -4,95 +4,95 @@
 
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
 
-<head>
-	<title>${the_title} - ${company_name}</title>
+	<head>
+		<title>${the_title} - ${company_name}</title>
 
-	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+		<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
-	<@liferay_util["include"] page=top_head_include />
+		${theme.include(top_head_include)}
 
-</head>
+	</head>
 
-<body class="${css_class}">
+	<body class="${css_class}">
 
-<@liferay_ui["quick-access"] contentId="#main-content" />
+		<@liferay_ui["quick-access"] contentId="#main-content" />
 
-<@liferay_util["include"] page=body_top_include />
+		<@liferay.product_menu_sidebar state="${liferay_product_menu_state}" />
 
-<#if is_setup_complete && is_signed_in>
-	<@liferay_control_menu["control-menu"] />
-</#if>
+		<#if is_setup_complete && is_signed_in>
+			<@liferay_control_menu["control-menu"] />
+		</#if>
 
-<@liferay.product_menu_sidebar state="${liferay_product_menu_state}" />
-
-	<div id="wrapper">
-		<div class="navbar-recursive">
-			<nav class="navbar navbar-inverse">
-				<div class="navbar-wrapper">
-					<div class="container-fluid-1280">
-						<ul class="hidden-xs nav navbar-nav">
-							<li><a href="#">ATENCIÓN AL CLIENTE</a></li>
-							<li><a href="#">OFICINAS Y CAJEROS</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
-							<@liferay.user_personal_bar />
-							<#assign VOID = freeMarkerPortletPreferences.reset()>
-						</ul>
-
-						<#if !is_signed_in>
-							<ul class="hidden-xs nav navbar-nav navbar-right">
-								<li><a href="#">HAZTE CLIENTE</a></li>
+		<div id="wrapper">
+			<div class="navbar-recursive">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-wrapper">
+						<div class="container-fluid-1280">
+							<ul class="hidden-xs nav navbar-nav">
+								<li><a href="#">ATENCIÓN AL CLIENTE</a></li>
+								<li><a href="#">OFICINAS Y CAJEROS</a></li>
 							</ul>
-						</#if>
+							<ul class="nav navbar-nav navbar-right">
+								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+								<@liferay.user_personal_bar />
+								<#assign VOID = freeMarkerPortletPreferences.reset()>
+							</ul>
+
+							<#if !is_signed_in>
+								<ul class="hidden-xs nav navbar-nav navbar-right">
+									<li><a href="#">HAZTE CLIENTE</a></li>
+								</ul>
+							</#if>
+						</div>
 					</div>
-				</div>
-			</nav>
-		</div>
-
-		<header class="container-fluid-1280" id="banner" role="banner">
-			<div class="navbar-header" id="heading">
-				<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="#navigationCollapse>" data-toggle="collapse" type="button">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<a class="$logo_css_class" href="$site_default_url" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="$logo_description" height="56" src="${images_folder}/westeros-bank-logo.png" />
-				</a>
-
+				</nav>
 			</div>
 
-			<#if has_navigation && is_setup_complete>
-				<#include "${full_templates_path}/navigation.ftl" />
-			</#if>
+			<header class="container-fluid-1280" id="banner" role="banner">
+				<div class="navbar-header" id="heading">
+					<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="#navigationCollapse>" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 
-		</header>
+					<a class="$logo_css_class" href="$site_default_url" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+						<img alt="$logo_description" height="56" src="${images_folder}/westeros-bank-logo.png" />
+					</a>
 
-		<main id="content" role="main">
-			<#include "${full_templates_path}/TEMP-content.ftl" />
-			<h1 class="hide-accessible">${the_title}</h1>
+				</div>
 
-			<#if selectable>
-				<@liferay_util["include"] page=content_include />
-			<#else>
-				${portletDisplay.recycle()}
-				${portletDisplay.setTitle(the_title)}
-				<@liferay_theme["wrap-portlet"] page="portlet.ftl">
-					<@liferay_util["include"] page=content_include />
-				</@>
-			</#if>
-		</main>
+				<#if has_navigation && is_setup_complete>
+					<#include "${full_templates_path}/navigation.ftl" />
+				</#if>
 
-		<#include "${full_templates_path}/footer.ftl" />
+			</header>
 
-	</div>
+			<main id="content" role="main">
+				<#include "${full_templates_path}/TEMP-content.ftl" />
+				<h1 class="hide-accessible">${the_title}</h1>
 
-<@liferay_util["include"] page=body_bottom_include />
+				<#if selectable>
+					${theme.include(content_include)}
+				<#else>
+					${portletDisplay.recycle()}
 
-<@liferay_util["include"] page=bottom_include />
+					${portletDisplay.setTitle(the_title)}
 
-</body>
+					<@liferay_theme["wrap-portlet"] page="portlet.ftl">
+						${theme.include(content_include)}
+					</@>
+				</#if>
+			</main>
+
+			<#include "${full_templates_path}/footer.ftl" />
+
+		</div>
+
+		${theme.include(body_bottom_include)}
+
+		${theme.include(bottom_include)}
+
+	</body>
 
 </html>

@@ -69,7 +69,7 @@
 			</header>
 
 			<main id="content" role="main">
-				<#include "${full_templates_path}/TEMP-content.ftl" />
+
 				<h1 class="hide-accessible">${the_title}</h1>
 
 				<#if selectable>
@@ -83,6 +83,7 @@
 						${theme.include(content_include)}
 					</@>
 				</#if>
+				<#include "${full_templates_path}/TEMP-content.ftl" />
 			</main>
 
 			<#include "${full_templates_path}/footer.ftl" />

@@ -1,13 +1,13 @@
 <!-- UPPER CAROUSEL -->
 
 <section class="container-fluid-1280 main-carousel-wrapper">
-	<div class="carousel slide" data-ride="carousel" id="main-carousel">
+	<div class="carousel slide" data-ride="carousel" id="main-carousel2">
 
 		<!-- Indicators -->
 		<ol class="carousel-indicators hidden-sm hidden-xs">
-			<li class="active" data-slide-to="0" data-target="#main-carousel"></li>
-			<li data-slide-to="1" data-target="#main-carousel"></li>
-			<li data-slide-to="2" data-target="#main-carousel"></li>
+			<li class="active" data-slide-to="0" data-target="#main-carousel2"></li>
+			<li data-slide-to="1" data-target="#main-carousel2"></li>
+			<li data-slide-to="2" data-target="#main-carousel2"></li>
 		</ol>
 
 		<div class="carousel-inner gallery-xxl" role="listbox">
@@ -15,7 +15,7 @@
 				<div class="item-wrapper">
 					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_01.jpg)">
 						</div>
-					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Shot decaffeinated brewed</p>
 						<h2>Cinnamon crema</h2>
 						<p class="lead">Seasonal mazagran organic caffeine french press affogato acerbic espresso. Sugar mocha brewed flavour fair trade grounds spoon.</p>
@@ -27,7 +27,7 @@
 				<div class="item-wrapper">
 					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_02.jpg)">
 					</div>
-					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Trade grounds</p>
 						<h2>Irish decaffeinated</h2>
 						<p class="lead">Caffeine, bar french press irish decaffeinated mug skinny carajillo white eu turkish. Latte et aged, extra caramelization qui aroma.</p>
@@ -39,7 +39,7 @@
 				<div class="item-wrapper">
 					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_03.jpg)">
 					</div>
-					<div class="col-sm-5 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
 						<p class="small text-uppercase">Aroma cinnamon et coffee</p>
 						<h2>Skinny carajillo</h2>
 						<p class="lead">Seasonal mazagran organic caffeine french press affogato acerbic espresso. Sugar mocha brewed flavour fair trade grounds spoon.</p>

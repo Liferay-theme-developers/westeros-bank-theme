@@ -1,4 +1,4 @@
-#main-carousel {
+.main-carousel-wrapper .carousel {
 	margin-bottom: 40px;
 
 	.item {
@@ -9,7 +9,7 @@
 			position: relative;
 		}
 
-		.item-wrapper > .col-sm-5.col-xs-12:first-child {
+		.item-wrapper > .col-sm-6.col-xs-12:first-child {
 			background-size: cover;
 			padding-bottom: 100%;
 
@@ -22,7 +22,7 @@
 			}
 		}
 
-		.col-sm-5.col-sm-offset-6.col-xs-12 {
+		.col-sm-6.col-sm-offset-6.col-xs-12 {
 			background-color: $brand-bg-color-1;
 			color: $brand-color-3;
 			padding-bottom: 20px;

@@ -5,11 +5,15 @@
 	<compatibility>
 		<version>7.0.0+</version>
 	</compatibility>
-	<theme id="westeros-bank" name="westeros-bank">
+	<theme id="westeros-bank" name="Westeros Bank">
 		<template-extension>ftl</template-extension>
 
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+
+		<portlet-decorator id="solid" name="Solid">
+			<portlet-decorator-css-class>portlet-solid</portlet-decorator-css-class>
 		</portlet-decorator>
 
 		<portlet-decorator id="decorate" name="Decorate">

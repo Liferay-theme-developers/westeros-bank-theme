@@ -1,4 +1,4 @@
-<div aria-expanded="false" class="collapse navbar-collapse" id="navigationCollapse">
+<div aria-expanded="true" class="navbar-collapse" id="navigationCollapse">
 	<nav id="search" role="navigation">
 		<div class="navbar-form navbar-right" role="search">
 			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>

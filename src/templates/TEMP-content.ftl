@@ -1,6 +1,6 @@
 <!-- UPPER CAROUSEL -->
 
-<section class="container-fluid-1280 main-carousel-wrapper">
+<section class="container-fluid-1280 main-carousel-wrapper"> <#--  id="<@liferay_portlet.namespace />" -->
 	<div class="carousel slide" data-ride="carousel" id="main-carousel2">
 
 		<!-- Indicators -->
@@ -13,9 +13,9 @@
 		<div class="carousel-inner gallery-xxl" role="listbox">
 			<div class="active item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_01.jpg)">
+					<div class="col-sm-5 item-wrapper-image" style="background-image: url(${images_folder}/content/487x529_01.jpg)">
 						</div>
-					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 item-wrapper-text">
 						<p class="small text-uppercase">Shot decaffeinated brewed</p>
 						<h2>Cinnamon crema</h2>
 						<p class="lead">Seasonal mazagran organic caffeine french press affogato acerbic espresso. Sugar mocha brewed flavour fair trade grounds spoon.</p>
@@ -25,9 +25,9 @@
 			</div>
 			<div class="item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_02.jpg)">
+					<div class="ol-sm-5 item-wrapper-image" style="background-image: url(${images_folder}/content/487x529_02.jpg)">
 					</div>
-					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 item-wrapper-text">
 						<p class="small text-uppercase">Trade grounds</p>
 						<h2>Irish decaffeinated</h2>
 						<p class="lead">Caffeine, bar french press irish decaffeinated mug skinny carajillo white eu turkish. Latte et aged, extra caramelization qui aroma.</p>
@@ -37,9 +37,9 @@
 			</div>
 			<div class="item">
 				<div class="item-wrapper">
-					<div class="col-sm-5 col-xs-12" style="background-image: url(${images_folder}/content/487x529_03.jpg)">
+					<div class="ol-sm-5 item-wrapper-image" style="background-image: url(${images_folder}/content/487x529_03.jpg)">
 					</div>
-					<div class="col-sm-6 col-sm-offset-6 col-xs-12">
+					<div class="col-sm-6 col-sm-offset-6 item-wrapper-text">
 						<p class="small text-uppercase">Aroma cinnamon et coffee</p>
 						<h2>Skinny carajillo</h2>
 						<p class="lead">Seasonal mazagran organic caffeine french press affogato acerbic espresso. Sugar mocha brewed flavour fair trade grounds spoon.</p>
@@ -81,21 +81,25 @@
 <!-- VIDEO PREVIEW + SMALL COLUMN -->
 
 	<section class="container-fluid-1280">
-		<div class="col-md-10 col-sm-9 col-xs-12 video-preview">
-			<div class="col-sm-6 text">
-				<p class="small text-uppercase">Lungo americano shop cinnamon</p>
-				<h2>Caramelization caffeine café au lait</h2>
-				<p class="lead">Arabica chicory, half and half crema cinnamon saucer galão mocha latte. Decaffeinated and extra, medium cortado mug ut filter. Flavour, percolator coffee qui aftertaste at aroma cultivar beans that saucer. Caramelization carajillo, foam.</p>
-				<p><a class="small text-uppercase" href="#"><strong>Cup aroma spoon</strong></a></p>
-			</div>
-			<div class="col-sm-6 image">
-				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/delete-file-video-home-488x530.jpg" /></a>
+		<div class="col-md-10 col-sm-9 col-no-padding">
+			<div class="video-preview">
+				<div class="col-sm-6 text">
+					<p class="small text-uppercase">Lungo americano shop cinnamon</p>
+					<h2>Caramelization caffeine café au lait</h2>
+					<p class="lead">Arabica chicory, half and half crema cinnamon saucer galão mocha latte. Decaffeinated and extra, medium cortado mug ut filter. Flavour, percolator coffee qui aftertaste at aroma cultivar beans that saucer. Caramelization carajillo, foam.</p>
+					<p><a class="small text-uppercase" href="#"><strong>Cup aroma spoon</strong></a></p>
+				</div>
+				<div class="col-sm-6 image">
+					<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="${images_folder}/content/delete-file-video-home-488x530.jpg" /></a>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-2 col-sm-3 col-xs-12">
-			<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/165x165.jpg" />
-			<p>Spoon crema, galão dripper galão affogato eu brewed froth. Latte extra crema doppio carajillo skinny milk bar sweet in variety. Eu turkish robusta eu, caramelization caffeine café au lait coffee.</p>
-			<p><a class="small text-uppercase" href="#"><strong>Latte decaffeinated</strong></a></p>
+		<div class="col-md-2 col-sm-3">
+			<div class="narrow-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive img-spacing" src="${images_folder}/content/165x165.jpg" />
+				<p>Spoon crema, galão dripper galão affogato eu brewed froth. Latte extra crema doppio carajillo skinny milk bar sweet in variety. Eu turkish robusta eu, caramelization caffeine café au lait coffee.</p>
+				<p><a class="small text-uppercase" href="#"><strong>Latte decaffeinated</strong></a></p>
+			</div>
 		</div>
 	</section>
 

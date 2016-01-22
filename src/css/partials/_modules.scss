@@ -9,7 +9,7 @@
 			position: relative;
 		}
 
-		.item-wrapper > .col-sm-6.col-xs-12:first-child {
+		.item-wrapper-image {
 			background-size: cover;
 			padding-bottom: 100%;
 
@@ -22,7 +22,7 @@
 			}
 		}
 
-		.col-sm-6.col-sm-offset-6.col-xs-12 {
+		.item-wrapper-text {
 			background-color: $brand-bg-color-1;
 			color: $brand-color-3;
 			padding-bottom: 20px;
@@ -94,6 +94,7 @@
 .video-preview {
 		background-color: $brand-bg-color-2;
 		color: $brand-color-3;
+		overflow: hidden;
 
 		@include media-query(null, $screen-xs-max) {
 			margin-bottom: 15px;

@@ -1,3 +1,4 @@
+@import "partials/layout";
 @import "partials/buttons";
 @import "partials/fonts";
 @import "partials/footer";
@@ -5,6 +6,8 @@
 @import "partials/modules";
 @import "partials/navbar";
 @import "partials/text-formats";
+
+@import "portlet_decorator";
 
 footer, nav, header {
 	& ul, & li {

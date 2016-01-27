@@ -8,6 +8,16 @@
 	<theme id="westeros-bank" name="Westeros Bank">
 		<template-extension>ftl</template-extension>
 
+		<layout-templates>
+			<custom>
+				<layout-template id="4_rows" name="Four colored rows">
+					<template-path>/layouttpl/custom/4_rows.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/4_rows.wap.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/4_rows.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
+
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
 		</portlet-decorator>

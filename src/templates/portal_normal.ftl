@@ -27,22 +27,21 @@
 			<div class="navbar-recursive">
 				<nav class="navbar navbar-inverse">
 					<div class="navbar-wrapper">
-						<div class="container-fluid-1280">
-							<ul class="hidden-xs nav navbar-nav">
-								<li><a href="#">ATENCIÓN AL CLIENTE</a></li>
-								<li><a href="#">OFICINAS Y CAJEROS</a></li>
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+						<div class="container-fluid-1280" id="headerTopBar">
+							<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+							<div class="hidden-xs nav navbar-nav">
+								<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+							</div>
+							<div class="nav navbar-nav navbar-right">
 								<@liferay.user_personal_bar />
-								<#assign VOID = freeMarkerPortletPreferences.reset()>
-							</ul>
+							</div>
 
 							<#if !is_signed_in>
-								<ul class="hidden-xs nav navbar-nav navbar-right">
-									<li><a href="#">HAZTE CLIENTE</a></li>
-								</ul>
+								<div class="hidden-xs nav navbar-nav navbar-right">
+									<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+								</div>
 							</#if>
+							<#assign VOID = freeMarkerPortletPreferences.reset()>
 						</div>
 					</div>
 				</nav>

@@ -5,7 +5,7 @@
 		</div>
 	</div>
 
-	<div class="portlet-layout color-bg-01">
+	<div class="portlet-layout secondary-background-color">
 		<div class="col-md-12 portlet-column portlet-column-first" id="column-2">
 			$processor.processColumn("column-2", "portlet-column-content portlet-column-content-first")
 		</div>
@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div class="portlet-layout color-bg-02">
+	<div class="portlet-layout tertiary-background-color">
 		<div class="col-md-12 portlet-column portlet-column-only" id="column-4">
 			$processor.processColumn("column-4", "portlet-column-content portlet-column-content-only")
 		</div>

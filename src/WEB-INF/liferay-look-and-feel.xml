@@ -10,10 +10,10 @@
 
 		<layout-templates>
 			<custom>
-				<layout-template id="4_rows" name="Four colored rows">
-					<template-path>/layouttpl/custom/4_rows.tpl</template-path>
-					<wap-template-path>/layouttpl/custom/4_rows.wap.tpl</wap-template-path>
-					<thumbnail-path>/layouttpl/custom/4_rows.png</thumbnail-path>
+				<layout-template id="4_light_gray" name="Four light gray rows">
+					<template-path>/layouttpl/custom/4_light_gray_rows.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/4_light_gray_rows.wap.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/4_light_gray_rows.png</thumbnail-path>
 				</layout-template>
 			</custom>
 		</layout-templates>

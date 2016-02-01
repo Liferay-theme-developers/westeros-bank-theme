@@ -1,10 +1,15 @@
 #headerTopBar {
+	font-weight: bold;
 	min-height: 44px;
 
 	.navbar, .portlet {
 		margin-bottom: 0;
 		min-height: 0;
 	}
+}
+
+#topLeftNav {
+	margin-top: 7px;
 }
 
 #banner {

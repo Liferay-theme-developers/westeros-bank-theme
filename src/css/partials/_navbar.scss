@@ -98,6 +98,10 @@
 		}
 	}
 
+	.navbar, .portlet {
+		margin-bottom: 0;
+	}
+
 	#global .navbar-nav {
 		@include sm {
 			margin-left: 60px;

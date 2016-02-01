@@ -17,9 +17,9 @@
 
 		<@liferay_ui["quick-access"] contentId="#main-content" />
 
-		<@liferay.product_menu_sidebar state="${liferay_product_menu_state}" />
+		${theme.include(body_top_include)}
 
-		<#if is_setup_complete && is_signed_in>
+		<#if themeDisplay.isImpersonated() || (is_setup_complete && is_signed_in)>
 			<@liferay_control_menu["control-menu"] />
 		</#if>
 
@@ -28,20 +28,26 @@
 				<nav class="navbar navbar-inverse">
 					<div class="navbar-wrapper">
 						<div class="container-fluid-1280" id="headerTopBar">
-							<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+
 							<div class="hidden-xs nav navbar-nav">
+								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 								<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+								<#assign VOID = freeMarkerPortletPreferences.reset()>
 							</div>
-							<div class="nav navbar-nav navbar-right">
-								<@liferay.user_personal_bar />
+							<div id="userArea">
+								<div class="nav navbar-right">
+									<ul class="navbar-nav">
+										<span class="icon-monospaced">
+											<svg class="lexicon-icon">
+											    <use xlink:href="${images_folder}/lexicon/icons.svg#users" />
+											</svg>
+										</span>
+
+										<@liferay.user_personal_bar />
+									</ul>
+								</div>
 							</div>
 
-							<#if !is_signed_in>
-								<div class="hidden-xs nav navbar-nav navbar-right">
-									<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
-								</div>
-							</#if>
-							<#assign VOID = freeMarkerPortletPreferences.reset()>
 						</div>
 					</div>
 				</nav>

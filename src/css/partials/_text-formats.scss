@@ -1,8 +1,8 @@
-#navigation, #footer, #banner, #content,
-#global, .tag-items, .portlet-title-text  {
+#navigation, #footer, #banner, #content, #global, .tag-items, .portlet-title-text , #headerTopBar {
 	font-family: 'open_sansregular';
 }
 
+/*
 .alloy-editor-wrapper, .asset-summary , .entry-content, .lfr-discussion-message, .entry-body {
 	color: $default-text-lighter;
 	font-family: 'open_sansregular';
@@ -16,7 +16,7 @@
 
 .entry-title a {
 	color: $brand-color-1;
-}
+}*/
 
 a.small.text-uppercase {
 	color: $brand-color-1;

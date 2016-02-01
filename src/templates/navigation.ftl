@@ -10,7 +10,7 @@
 	<nav id="global" role="navigation">
 		<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 		<ul class="nav navbar-nav">
-			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="headerTopBar_navigation" />
 		</ul>
 		<#assign VOID = freeMarkerPortletPreferences.reset()>
 	</nav>
@@ -18,7 +18,7 @@
 	<nav class="${nav_css_class} site-navigation" id="navigation" role="navigation">
 		<h1 class="hide-accessible"><@liferay.language key="navigation" /></h1>
 		<ul aria-label="<@liferay.language key="site-pages" />" class="nav nav-justified navbar-site" role="menubar">
-			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="client_Navigation" />
 		</ul>
 	</nav>
 </div>

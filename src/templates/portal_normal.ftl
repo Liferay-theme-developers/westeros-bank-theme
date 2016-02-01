@@ -29,11 +29,12 @@
 					<div class="navbar-wrapper">
 						<div class="container-fluid-1280" id="headerTopBar">
 
-							<div class="hidden-xs nav navbar-nav">
+							<div class="hidden-xs nav navbar-nav" id="topLeftNav">
 								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 								<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
 								<#assign VOID = freeMarkerPortletPreferences.reset()>
 							</div>
+
 							<div id="userArea">
 								<div class="nav navbar-right">
 									<ul class="navbar-nav">
@@ -91,7 +92,7 @@
 						${theme.include(content_include)}
 					</@>
 				</#if>
-				<#include "${full_templates_path}/TEMP-content.ftl" />
+				<#-- <#include "${full_templates_path}/TEMP-content.ftl" /> -->
 			</main>
 
 			<#include "${full_templates_path}/footer.ftl" />

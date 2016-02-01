@@ -22,6 +22,7 @@
 		display: none;
 	}
 	/*}*/
+
 	.portlet-user-personal-bar {
 		display: inline-block;
 	}
@@ -32,10 +33,12 @@
 
 #userArea .lexicon-icon {
 	fill: #858E93;
+}
 
-	.signed-in & {
-		display: none;
-	}
+.user-avatar-image {
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 #userArea {

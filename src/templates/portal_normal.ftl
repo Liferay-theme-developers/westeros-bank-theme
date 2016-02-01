@@ -37,11 +37,14 @@
 							<div id="userArea">
 								<div class="nav navbar-right">
 									<ul class="navbar-nav">
-										<span class="icon-monospaced">
-											<svg class="lexicon-icon">
-											    <use xlink:href="${images_folder}/lexicon/icons.svg#users" />
-											</svg>
-										</span>
+
+										<#if !is_signed_in>
+											<span class="icon-monospaced">
+												<svg class="lexicon-icon">
+												    <use xlink:href="${images_folder}/lexicon/icons.svg#users" />
+												</svg>
+											</span>
+										</#if>
 
 										<@liferay.user_personal_bar />
 									</ul>

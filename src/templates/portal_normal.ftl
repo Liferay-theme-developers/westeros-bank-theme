@@ -69,9 +69,9 @@
 
 				</div>
 
-				<#if has_navigation && is_setup_complete>
+				<#-- <#if has_navigation && is_setup_complete>-->
 					<#include "${full_templates_path}/navigation.ftl" />
-				</#if>
+				<#-- </#if> -->
 
 			</header>
 

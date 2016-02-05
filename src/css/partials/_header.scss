@@ -1,3 +1,56 @@
+.navbar-recursive {
+	.navbar-toggle {
+		margin: 0 12px;
+		padding: 12px;
+	}
+
+	.navbar-inverse {
+		background: $main-black;
+		border-width: 0;
+		min-height: 28px;
+	}
+
+	.navbar-nav > li > a {
+		color: #858E93;
+		font-size: 12px;
+		padding: 6px 15px;
+		text-transform: uppercase;
+	}
+
+	.icon-user {
+		display: none;
+	}
+
+	.portlet-user-personal-bar {
+		display: inline-block;
+	}
+
+	.portlet:hover {
+		z-index: 500;
+		background: #000;
+	}
+}
+
+#userArea .lexicon-icon {
+	fill: #858E93;
+}
+
+.user-avatar-image {
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+#userArea {
+	a {
+		color: #858E93;
+		display: block;
+		font-size: 12px;
+		padding: 13px 15px 13px 0;
+		text-transform: uppercase;
+	}
+}
+
 #headerTopBar {
 	font-weight: bold;
 	min-height: 44px;
@@ -36,62 +89,7 @@
 			vertical-align: middle;
 		}
 	}
-}
 
-.navbar-recursive {
-	.navbar-toggle {
-		margin: 0 12px;
-		padding: 12px;
-	}
-
-	.navbar-inverse {
-		background: $main-black;
-		border-width: 0;
-		min-height: 28px;
-	}
-
-	.navbar-nav > li > a {
-		color: #858E93;
-		font-size: 12px;
-		padding: 6px 15px;
-		text-transform: uppercase;
-	}
-
-	/*.user-avatar-link {*/
-	.icon-user /*.user-avatar-image*/ {
-		display: none;
-	}
-	/*}*/
-
-	.portlet-user-personal-bar {
-		display: inline-block;
-	}
-	/*.sign-in a {
-		padding-left: 5px;
-	}*/
-}
-
-#userArea .lexicon-icon {
-	fill: #858E93;
-}
-
-.user-avatar-image {
-	display: inline-block;
-	margin-right: 5px;
-	vertical-align: middle;
-}
-
-#userArea {
-	a {
-		color: #858E93;
-		display: block;
-		font-size: 12px;
-		padding: 13px 15px 13px 0;
-		text-transform: uppercase;
-	}
-}
-
-#banner {
 	#navigation {
 		float: left;
 		width: 100%;

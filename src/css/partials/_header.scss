@@ -8,13 +8,17 @@
 		background: $main-black;
 		border-width: 0;
 		min-height: 28px;
-	}
 
-	.navbar-nav > li > a {
-		color: #858E93;
-		font-size: 12px;
-		padding: 6px 15px;
-		text-transform: uppercase;
+		.navbar-nav > li > a {
+			color: #858E93;
+			font-size: 12px;
+			padding: 6px 15px;
+			text-transform: uppercase;
+
+			&:hover, &:focus {
+				color: $brand-color-3;
+			}
+		}
 	}
 
 	.icon-user {
@@ -26,8 +30,8 @@
 	}
 
 	.portlet:hover {
-		z-index: 500;
 		background: #000;
+		z-index: 500;
 	}
 }
 
@@ -48,6 +52,10 @@
 		font-size: 12px;
 		padding: 13px 15px 13px 0;
 		text-transform: uppercase;
+
+		&:hover, &:focus {
+			color: $brand-color-3;
+		}
 	}
 }
 
@@ -91,27 +99,31 @@
 	}
 
 	#navigation {
-		float: left;
-		width: 100%;
+		clear: both;
 
 		@include sm {
-			margin-top: 24px;
+			padding-top: 10px;
 		}
 
 		.nav > li {
 			& > a {
+				border-top: 1px solid #EDEDED;
 				color: $default-text-dark;
 				text-align: left;
 
+				i {
+					color: #969696;
+					font-size: 11px;
+				}
+
 				@include sm {
-					border-top: 1px solid #EDEDED;
 					margin-right: 20px;
 					padding: 12px 12px 12px 0;
-
-					.lfr-nav-child-toggle {
-						float: right;
-					}
 				}
+			}
+
+			.lfr-nav-child-toggle {
+				float: right;
 			}
 
 			&:last-child > a {
@@ -133,6 +145,21 @@
 					font-weight: bold;
 				}
 			}
+		}
+	}
+
+	.child-menu.dropdown-menu {
+		background-color: #FAFAFA;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.dropdown-menu > li > a {
+		color: #969696;
+
+		&:focus, &:hover {
+			background-color: $brand-bg-color-3;
+			color: $main-black;
 		}
 	}
 
@@ -195,9 +222,12 @@
 
 		.field-wrapper {
 			margin-bottom: 0;
-			position: absolute;
-			right: 0;
-			top: 1px;
+
+			/*@include sm {*/
+				position: absolute;
+				right: 0;
+				top: 1px;
+			/*}*/
 
 			.search-button {
 				background-color: transparent;
@@ -210,5 +240,18 @@
 				}
 			}
 		}
+	}
+	#search .input-container {
+		position: relative;
+	}
+}
+
+/************
+TEMPORARY STYLES TO DISABLE SUBMENUS IN MAIN NAVIGATION 
+***************/
+
+#global {
+	[class^="icon-"], .child-menu.dropdown-menu {
+		display: none;
 	}
 }

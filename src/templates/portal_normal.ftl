@@ -29,7 +29,7 @@
 
 							<div class="hidden-xs nav navbar-nav" id="topLeftNav">
 								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
-								<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
+									<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
 								<#assign VOID = freeMarkerPortletPreferences.reset()>
 							</div>
 
@@ -40,7 +40,7 @@
 										<#if !is_signed_in>
 											<span class="icon-monospaced">
 												<svg class="lexicon-icon">
-												    <use xlink:href="${images_folder}/lexicon/icons.svg#users" />
+												 	<use xlink:href="${images_folder}/lexicon/icons.svg#users" />
 												</svg>
 											</span>
 										</#if>
@@ -56,22 +56,24 @@
 			</div>
 
 			<header class="container-fluid-1280" id="banner" role="banner">
+
 				<div class="navbar-header" id="heading">
+
 					<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="#navigationCollapse>" data-toggle="collapse" type="button">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="$logo_css_class" href="$site_default_url" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-						<img alt="$logo_description" height="56" src="${images_folder}/westeros-bank-logo.png" />
+					<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+						<img alt="${logo_description}" height="56" src="${site_logo}" />
 					</a>
 
 				</div>
 
-				<#-- <#if has_navigation && is_setup_complete>-->
+				<#if has_navigation && is_setup_complete>
 					<#include "${full_templates_path}/navigation.ftl" />
-				<#-- </#if> -->
+				</#if>
 
 			</header>
 
@@ -90,7 +92,7 @@
 						<@liferay_util["include"] page=content_include />
 					</@>
 				</#if>
-				<#-- <#include "${full_templates_path}/TEMP-content.ftl" /> -->
+
 			</main>
 
 			<#include "${full_templates_path}/footer.ftl" />

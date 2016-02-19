@@ -30,7 +30,7 @@
 	}
 
 	.portlet:hover {
-		background: #000;
+		background: $main-black;
 		z-index: 500;
 	}
 }
@@ -148,7 +148,7 @@
 	}
 
 	.child-menu.dropdown-menu {
-		background-color: #FAFAFA;
+		background-color: $main-bg-color;
 		border-radius: 0;
 		box-shadow: none;
 	}
@@ -248,7 +248,7 @@ TEMPORARY STYLES TO DISABLE SUBMENUS IN TOP HEADER NAVIGATION
 ***************/
 
 #global {
-	.child-menu.dropdown-menu {
+	.icon-caret-down, .child-menu.dropdown-menu {
 		display: none;
 	}
 }

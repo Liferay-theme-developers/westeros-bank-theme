@@ -1,7 +1,7 @@
 #footer {
 	background-color: $brand-bg-color-1;
 	color: $brand-color-3;
-	padding: 20px 0;
+	padding-bottom: 20px;
 
 	a {
 		color: $brand-color-3;
@@ -12,79 +12,7 @@
 	}
 
 	@include sm {
-		padding: 40px 0 20px;
-	}
-
-	h2 {
-		font-family: open_sanssemibold;
-		margin-bottom: 40px;
-	}
-}
-
-#footer-modules {
-	@include sm {
-		margin-bottom: 50px;
-		padding: 10px 0;
-		position: relative;
-
-		&::before {
-			border-right: 1px solid #5EA7CB;
-			content: " ";
-			display: block;
-			height: 100%;
-			position: absolute;
-			right: 50%;
-			top: 0;
-			width: 1px;
-		}
-	}
-}
-
-.mod-footer {
-	display: table;
-	margin-bottom: 30px;
-	width: 100%;
-
-	@include media-query($breakpoint_tablet, null) {
-		margin-bottom: 45px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	.user-icon {
-		background: rgba($brand-color-3, 0.06);
-		border-radius: 50%;
-		color: $brand-color-3;
-		display: table-cell;
-	}
-
-	h3 {
-		font-family: open_sanssemibold;
-		margin: 0 0 5px;
-	}
-
-	.txt {
-		display: table-cell;
-		vertical-align: middle;
-
-		@include sm {
-			padding-left: percentage(25/580);
-		}
-	}
-
-	.content {
-		font-size: 12px;
-		opacity: 0.5;
-
-		@include media-query($breakpoint_tablet, null) {
-			font-size: 16px;
-		}
-	}
-
-	p:last-child {
-		margin-bottom: 0;
+		padding: 0 0 20px;
 	}
 }
 

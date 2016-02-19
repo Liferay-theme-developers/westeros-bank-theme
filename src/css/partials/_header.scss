@@ -113,7 +113,6 @@
 
 				i {
 					color: #969696;
-					font-size: 11px;
 				}
 
 				@include sm {
@@ -222,12 +221,9 @@
 
 		.field-wrapper {
 			margin-bottom: 0;
-
-			/*@include sm {*/
-				position: absolute;
-				right: 0;
-				top: 1px;
-			/*}*/
+			position: absolute;
+			right: 0;
+			top: 1px;
 
 			.search-button {
 				background-color: transparent;
@@ -241,17 +237,18 @@
 			}
 		}
 	}
+
 	#search .input-container {
 		position: relative;
 	}
 }
 
 /************
-TEMPORARY STYLES TO DISABLE SUBMENUS IN MAIN NAVIGATION 
+TEMPORARY STYLES TO DISABLE SUBMENUS IN TOP HEADER NAVIGATION
 ***************/
 
 #global {
-	[class^="icon-"], .child-menu.dropdown-menu {
+	.child-menu.dropdown-menu {
 		display: none;
 	}
 }

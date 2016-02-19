@@ -6,24 +6,17 @@
 			<#assign VOID = freeMarkerPortletPreferences.reset()>
 		</div>
 	</nav>
-
 	<nav id="global" role="navigation">
-		<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 		<ul class="nav navbar-nav">
-			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="headerTopBar_navigation" />
+			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="header_navigation_menu" />
+			<#assign VOID = freeMarkerPortletPreferences.reset()>
 		</ul>
+	</nav>
+	<nav class="${nav_css_class} navbar-nav site-navigation" id="navigation" role="navigation">
+		<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+		<#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_NAVBAR-BLANK-JUSTIFIED-FTL")>
+		<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="main_navigation_menu" />
 		<#assign VOID = freeMarkerPortletPreferences.reset()>
 	</nav>
-
-	<nav class="${nav_css_class} site-navigation" id="navigation" role="navigation">
-		<h1 class="hide-accessible"><@liferay.language key="navigation" /></h1>
-		<ul aria-label="<@liferay.language key="site-pages" />" class="nav nav-justified navbar-site" role="menubar">
-			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="client_Navigation" />
-		</ul>
-	</nav>
 </div>
-
-<script>
-	Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
-	Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
-</script>

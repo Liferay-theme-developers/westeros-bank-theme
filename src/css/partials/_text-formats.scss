@@ -13,18 +13,6 @@ a.small.text-uppercase {
 	}
 }
 
-u.theme-underlined {
-	border-bottom: 1px solid $brand-bg-color-1;
-	font-style: italic;
-	font-weight: normal;
-	padding-bottom: 10px;
-	text-decoration: none;
-
-	@include media-query($breakpoint_tablet, null) {
-		padding-bottom: 20px;
-	}
-}
-
 .theme-alert {
 	background-color: $brand-bg-color-3;
 	border: 1px solid #EDEDED;

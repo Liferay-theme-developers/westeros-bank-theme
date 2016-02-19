@@ -1,7 +1,7 @@
 #footer {
 	background-color: $brand-bg-color-1;
 	color: $brand-color-3;
-	padding-bottom: 20px;
+	padding-bottom: 0;
 
 	a {
 		color: $brand-color-3;
@@ -10,16 +10,11 @@
 			text-decoration: underline;
 		}
 	}
-
-	@include sm {
-		padding: 0 0 20px;
-	}
 }
 
 #footer-recursive {
 	background-color: #318AB7;
 	font-family: open_sanssemibold;
-	margin-bottom: 30px;
 	opacity: 0.6;
 
 	ul {

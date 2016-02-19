@@ -40,7 +40,7 @@
 										<#if !is_signed_in>
 											<span class="icon-monospaced">
 												<svg class="lexicon-icon">
-												 	<use xlink:href="${images_folder}/lexicon/icons.svg#users" />
+													<use xlink:href="${images_folder}/lexicon/icons.svg#users" />
 												</svg>
 											</span>
 										</#if>

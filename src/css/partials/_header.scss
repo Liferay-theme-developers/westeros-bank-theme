@@ -35,10 +35,6 @@
 	}
 }
 
-#userArea .lexicon-icon {
-	fill: #858E93;
-}
-
 .user-avatar-image {
 	display: inline-block;
 	margin-right: 5px;
@@ -56,6 +52,10 @@
 		&:hover, &:focus {
 			color: $brand-color-3;
 		}
+	}
+
+	.lexicon-icon {
+		fill: #858E93;
 	}
 }
 

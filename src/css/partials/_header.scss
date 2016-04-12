@@ -237,18 +237,4 @@
 			}
 		}
 	}
-
-	#search .input-container {
-		position: relative;
-	}
-}
-
-/************
-TEMPORARY STYLES TO DISABLE SUBMENUS IN TOP HEADER NAVIGATION
-***************/
-
-#global {
-	.icon-caret-down, .child-menu.dropdown-menu {
-		display: none;
-	}
 }

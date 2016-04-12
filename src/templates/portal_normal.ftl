@@ -27,7 +27,7 @@
 					<div class="navbar-wrapper">
 						<div class="container-fluid-1280" id="headerTopBar">
 
-							<div class="hidden-xs nav navbar-nav" id="topLeftNav">
+							<div class="hidden-xs nav navbar-nav">
 								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 									<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
 								<#assign VOID = freeMarkerPortletPreferences.reset()>

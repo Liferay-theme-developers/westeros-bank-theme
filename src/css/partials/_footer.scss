@@ -15,7 +15,6 @@
 #footer-recursive {
 	background-color: #318AB7;
 	font-family: open_sanssemibold;
-	opacity: 0.6;
 
 	ul {
 		@include media-query($breakpoint_tablet, null) {

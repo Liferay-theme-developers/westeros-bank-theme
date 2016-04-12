@@ -13,7 +13,7 @@
 			<#assign VOID = freeMarkerPortletPreferences.reset()>
 		</ul>
 	</nav>
-	<nav class="${nav_css_class} navbar-nav site-navigation" id="navigation" role="navigation">
+	<nav class="navbar-nav site-navigation" id="navigation" role="navigation">
 		<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 		<#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_NAVBAR-BLANK-JUSTIFIED-FTL")>
 		<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="main_navigation_menu" />

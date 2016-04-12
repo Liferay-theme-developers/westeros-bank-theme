@@ -8,14 +8,6 @@
 
 @import "portlet_decorator";
 
-footer, nav, header {
-	& ul, & li {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-}
-
 .img-spacing {
 	margin-bottom: 15px;
 }

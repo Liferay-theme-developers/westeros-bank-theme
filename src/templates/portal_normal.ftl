@@ -33,8 +33,8 @@
 								<#assign VOID = freeMarkerPortletPreferences.reset()>
 							</div>
 
-							<div id="userArea">
-								<div class="nav navbar-right">
+							<div class="user-area">
+								<div class="nav pull-right">
 									<ul class="navbar-nav">
 
 										<#if !is_signed_in>

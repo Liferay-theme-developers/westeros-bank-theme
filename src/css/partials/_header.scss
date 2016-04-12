@@ -191,6 +191,10 @@
 	}
 
 	.navbar-form {
+		@include media-query(null, $screen-xs-max) {
+			padding: 4px;
+		}
+
 		@include sm {
 			margin-left: 30px;
 		}

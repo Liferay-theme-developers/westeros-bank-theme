@@ -103,53 +103,53 @@
 }
 
 .video-preview {
-		background-color: $brand-bg-color-2;
-		color: $brand-color-3;
-		margin: 25px 0;
-		overflow: hidden;
+	background-color: $brand-bg-color-2;
+	color: $brand-color-3;
+	margin: 25px 0;
+	overflow: hidden;
 
-		@include media-query(null, $screen-xs-max) {
-			margin-bottom: 15px;
+	@include media-query(null, $screen-xs-max) {
+		margin-bottom: 15px;
+	}
+
+	.text {
+		background-color: $brand-bg-color-2;
+		font-size: 12px;
+		padding: 15px;
+
+		@include media-query(sm, $screen-sm-max) {
+			padding: 15px;
 		}
 
-		.text {
-			background-color: $brand-bg-color-2;
-			font-size: 12px;
-			padding: 15px;
+		@include media-query($breakpoint_tablet, null) {
+			padding: 40px 15px;
+		}
+	}
+
+	p.small.text-uppercase {
+		font-family: open_sanssemibold;
+		font-size: 10px;
+		opacity: 0.5;
 
 			@include media-query(sm, $screen-sm-max) {
-				padding: 15px;
+				margin-bottom: 30px;
 			}
 
 			@include media-query($breakpoint_tablet, null) {
-				padding: 40px 15px;
+				font-size: 12px;
+				margin-bottom: 80px;
 			}
 		}
 
-		p.small.text-uppercase {
-			font-family: open_sanssemibold;
-			font-size: 10px;
-			opacity: 0.5;
+	.lead {
+		margin-bottom: 30px;
+		opacity: 0.7;
 
-				@include media-query(sm, $screen-sm-max) {
-					margin-bottom: 30px;
-				}
-
-				@include media-query($breakpoint_tablet, null) {
-					font-size: 12px;
-					margin-bottom: 80px;
-				}
-			}
-
-		.lead {
-			margin-bottom: 30px;
-			opacity: 0.7;
-
-			@include sm {
-				font-size: 16px;
-				margin-bottom: 40px;
-			}
+		@include sm {
+			font-size: 16px;
+			margin-bottom: 40px;
 		}
+	}
 
 	@include sm {
 		.image {

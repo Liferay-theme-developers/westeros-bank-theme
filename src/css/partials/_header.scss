@@ -55,6 +55,7 @@
 
 		&:hover, &:focus {
 			color: $brand-color-3;
+			text-decoration: initial;
 		}
 
 		.icon-login {

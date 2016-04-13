@@ -56,6 +56,12 @@
 		&:hover, &:focus {
 			color: $brand-color-3;
 		}
+
+		.icon-login {
+			@include sm {
+				padding-top: 3px;
+			}
+		}
 	}
 
 	.lexicon-icon {

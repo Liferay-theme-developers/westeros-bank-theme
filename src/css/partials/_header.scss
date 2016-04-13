@@ -174,12 +174,12 @@
 	}
 
 	#global .navbar-nav {
-		@include media-query(sm, $screen-sm-max) {
-			margin-left: 60px;
+		@include sm {
+			margin-left: 30px;
 		}
 
-		@include sm {
-			margin-left: 20px;
+		@include media-query($breakpoint_tablet, null) {
+			margin-left: 60px;
 		}
 
 		& > li {

@@ -173,8 +173,12 @@
 	}
 
 	#global .navbar-nav {
-		@include sm {
+		@include media-query(sm, $screen-sm-max) {
 			margin-left: 60px;
+		}
+
+		@include sm {
+			margin-left: 20px;
 		}
 
 		& > li {

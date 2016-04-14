@@ -8,7 +8,7 @@
 			<#assign VOID = freeMarkerPortletPreferences.reset()>
 		</div>
 	</nav>
-	<nav id="global" role="navigation">
+	<nav class="nav-header-global" role="navigation">
 		<ul class="nav navbar-nav">
 			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 

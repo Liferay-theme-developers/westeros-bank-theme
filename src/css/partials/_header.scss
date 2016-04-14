@@ -173,7 +173,9 @@
 		margin-bottom: 0;
 	}
 
-	#global .navbar-nav {
+	.nav-header-global .navbar-nav {
+		margin: 0;
+
 		@include sm {
 			margin-left: 30px;
 		}

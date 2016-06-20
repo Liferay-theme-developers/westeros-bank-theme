@@ -1,0 +1,33 @@
+<#assign showGlobaMenuOn = themeDisplay.getThemeSetting("show-global-menu-on")>
+<#assign showRecursivEmenuOn = themeDisplay.getThemeSetting("show-recursive-menu-on")>
+<#assign showMainSearch = themeDisplay.getThemeSetting("show-main-search")>
+
+<#if showGlobaMenuOn = "all-screens">
+	<#assign global_menu_class = "">
+<#elseif showGlobaMenuOn = "big-screens">
+	<#assign global_menu_class = "hidden-xs">
+<#elseif showGlobaMenuOn = "small-screens">
+	<#assign global_menu_class = "hidden-md">
+<#else>
+	<#assign global_menu_class = "no-screen">
+</#if>
+
+<#if showRecursivEmenuOn = "all-screens">
+	<#assign main_recursive_menu_class = "">
+<#elseif showRecursivEmenuOn = "big-screens">
+	<#assign main_recursive_menu_class = "hidden-xs">
+<#elseif showRecursivEmenuOn = "small-screens">
+	<#assign main_recursive_menu_class = "hidden-md">
+<#else>
+	<#assign main_recursive_menu_class = "no-screen">
+</#if>
+
+<#if showMainSearch = "all-screens">
+	<#assign main_search_class = "">
+<#elseif showMainSearch = "big-screens">
+	<#assign main_search_class = "hidden-xs">
+<#elseif showMainSearch = "small-screens">
+	<#assign main_search_class = "hidden-md">
+<#else>
+	<#assign main_search_class = "no-screen">
+</#if>

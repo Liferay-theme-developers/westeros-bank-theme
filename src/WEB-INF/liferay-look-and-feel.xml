@@ -8,6 +8,12 @@
 	<theme id="westeros-bank" name="Westeros Bank">
 		<template-extension>ftl</template-extension>
 
+		<settings>
+			<setting configurable="true" key="show-global-menu-on" options="all-screens,big-screen,small-screen,no-screen" type="select" value="true" />
+			<setting configurable="true" key="show-main-search" options="all-screens,big-screen,small-screen,no-screen" type="select" value="true" />
+			<setting configurable="true" key="show-recursive-menu-on" options="all-screens,big-screen,small-screen,no-screen" type="select" value="true" />
+		</settings>
+
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
 		</portlet-decorator>

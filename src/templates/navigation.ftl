@@ -1,14 +1,17 @@
 <div aria-expanded="true" class="collapse navbar-collapse" id="navigationCollapse">
-	<nav id="search" role="navigation">
-		<div class="navbar-form navbar-right" role="search">
-			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 
-			<@liferay.search default_preferences="${freeMarkerPortletPreferences}" />
+	<#if main_search_class != "no-screen">
+		<nav id="search" role="navigation">
+			<div class="${main_search_class} navbar-form navbar-right" role="search">
+				<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 
-			<#assign VOID = freeMarkerPortletPreferences.reset()>
-		</div>
-	</nav>
-	<nav class="nav-header-global" role="navigation">
+				<@liferay.search default_preferences="${freeMarkerPortletPreferences}" />
+
+				<#assign VOID = freeMarkerPortletPreferences.reset()>
+			</div>
+		</nav>
+	</#if>
+	<nav class="nav-header-global row" role="navigation">
 		<ul class="nav navbar-nav">
 			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 

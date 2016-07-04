@@ -26,12 +26,16 @@
 				<nav class="navbar navbar-inverse">
 					<div class="navbar-wrapper">
 						<div class="container-fluid-1280" id="headerTopBar">
+							<h1>hey ${main_recursive_menu_class}</h1>
+							<#if main_recursive_menu_class != "no-screen">
+								<div class="${main_recursive_menu_class} nav navbar-nav">
+									<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 
-							<div class="hidden-xs nav navbar-nav">
-								<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 									<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
-								<#assign VOID = freeMarkerPortletPreferences.reset()>
-							</div>
+
+									<#assign VOID = freeMarkerPortletPreferences.reset()>
+								</div>
+							</#if>
 
 							<div class="user-area">
 								<div class="nav pull-right">
@@ -73,7 +77,7 @@
 
 				</div>
 
-				<#if has_navigation && is_setup_complete>
+				<#if has_navigation>
 					<#include "${full_templates_path}/navigation.ftl" />
 				</#if>
 

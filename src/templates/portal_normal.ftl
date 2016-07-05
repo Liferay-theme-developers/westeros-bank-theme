@@ -26,7 +26,6 @@
 				<nav class="navbar navbar-inverse">
 					<div class="navbar-wrapper">
 						<div class="container-fluid-1280" id="headerTopBar">
-							<h1>hey ${main_recursive_menu_class}</h1>
 							<#if main_recursive_menu_class != "no-screen">
 								<div class="${main_recursive_menu_class} nav navbar-nav">
 									<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>

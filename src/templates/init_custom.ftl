@@ -1,5 +1,5 @@
 <#assign showGlobaMenuOn = themeDisplay.getThemeSetting("show-global-menu-on")>
-<#assign showRecursivEmenuOn = themeDisplay.getThemeSetting("show-recursive-menu-on")>
+<#assign showRecursiveMenuOn = themeDisplay.getThemeSetting("show-recursive-menu-on")>
 <#assign showMainSearch = themeDisplay.getThemeSetting("show-main-search")>
 
 <#if showGlobaMenuOn = "all-screens">
@@ -12,11 +12,11 @@
 	<#assign global_menu_class = "no-screen">
 </#if>
 
-<#if showRecursivEmenuOn = "all-screens">
+<#if showRecursiveMenuOn = "all-screens">
 	<#assign main_recursive_menu_class = "">
-<#elseif showRecursivEmenuOn = "big-screens">
+<#elseif showRecursiveMenuOn = "big-screens">
 	<#assign main_recursive_menu_class = "hidden-xs">
-<#elseif showRecursivEmenuOn = "small-screens">
+<#elseif showRecursiveMenuOn = "small-screens">
 	<#assign main_recursive_menu_class = "hidden-md">
 <#else>
 	<#assign main_recursive_menu_class = "no-screen">

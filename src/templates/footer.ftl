@@ -6,7 +6,7 @@
 				<#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "1")>
 				<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 
-				<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="footer_navigation_menu" />
+				<@liferay.navigation_menu instance_id="footer_navigation_menu" default_preferences="${freeMarkerPortletPreferences}" />
 
 				<#assign VOID = freeMarkerPortletPreferences.reset()>
 			</div>

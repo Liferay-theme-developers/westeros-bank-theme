@@ -197,9 +197,11 @@
 				}
 			}
 
-			&.active a {
-				border-bottom: 1px solid $brand-color-1;
-				color: $brand-color-1;
+			&.active, &.open {
+				a {
+					border-bottom: 1px solid $brand-color-1;
+					color: $brand-color-1;
+				}
 			}
 		}
 	}

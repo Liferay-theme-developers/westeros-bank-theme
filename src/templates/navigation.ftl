@@ -13,6 +13,7 @@
 	</#if>
 	<nav class="nav-header-global row" role="navigation">
 		<ul class="nav navbar-nav">
+			<#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "1")>
 			<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 
 			<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="header_navigation_menu" />
@@ -23,6 +24,7 @@
 	<nav class="navbar-nav site-navigation" id="navigation" role="navigation">
 		<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
 		<#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_NAVBAR-BLANK-JUSTIFIED-FTL")>
+		<#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutType", "relative")>
 
 		<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" instance_id="main_navigation_menu" />
 
